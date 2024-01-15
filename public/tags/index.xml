@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Mikrus - Don&#39;t Panic!</title>
-    <link>https://mikrus.wkro.pl/tags/</link>
+    <link>https://koliwbr.github.io/mikrus-wiki/tags/</link>
     <description>Recent content in Tags on Mikrus - Don&#39;t Panic!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pl</language>
-    <atom:link href="https://mikrus.wkro.pl/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://koliwbr.github.io/mikrus-wiki/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

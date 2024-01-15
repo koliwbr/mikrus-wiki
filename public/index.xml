@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mikrus - Don&#39;t Panic!</title>
-    <link>https://mikrus.wkro.pl/</link>
+    <link>https://koliwbr.github.io/mikrus-wiki/</link>
     <description>Recent content on Mikrus - Don&#39;t Panic!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pl</language>
-    <atom:link href="https://mikrus.wkro.pl/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://koliwbr.github.io/mikrus-wiki/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/amfetamina/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/amfetamina/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/amfetamina/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/amfetamina/</guid>
       <description>Amfetamina Jeśli zasoby Twojego Mikrusa Ci nie wystarczają (np. masz maszynę pierwszej generacji i 256MB pamięci), a koniecznie chciałbyś uruchomić kompilację jakiegoś softu, czy instalację oprogramowania, to &amp;lsquo;Amfetamina&amp;rsquo; (bo tak nazywamy tę funkcję w panelu) sprawi, że Twój serwer na chwilę (30 minut) zyska trochę więcej energii.
 W praktyce otrzymasz dodatkową pamięć operacyjną i zniesiony zostanie limit szybkości zapisu na dysku. Po godzinie od aktywacji tej opcji wszystko wróci do normy.</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/apache_php_mysql/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/apache_php_mysql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/apache_php_mysql/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/apache_php_mysql/</guid>
       <description>Apache + PHP + MySQL Postawienie tzw. LAMP (Linux + Apache + PHP + MySQL) jest skrajnie proste i ogranicza się do wydania dosłownie kilku poleceń.
 Po pierwsze, zaktualizuj repozytorium pakietów
 apt update Następnie zainstaluj niezbędne pakiety
@@ -29,369 +29,369 @@ echo &amp;#34;&amp;lt;?php phpinfo(); &amp;#34; &amp;gt;**/var/www/html/**test.<
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/-index/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/-index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/-index/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/-index/</guid>
       <description>Biblioteka Mikrusa Baza, którą właśnie czytasz, przeznaczona jest dla użytkowników serwerów MIKR.US i ma za zadanie dostarczyć im niezbędnej wiedzy potrzebnej do wzrastania w roli admina, DevOpsa, czy świadomego programisty.
 &amp;ldquo;Poziom zaawansowania&amp;rdquo; nie zawsze oznacza &amp;ldquo;poziom trudności tematu&amp;rdquo;, a jest subiektywnym stwierdzeniem, która grupa użytkowników potrzebuje danej wiedzy. Czasami temat jest prosty, ale wykracza poza zakres wiedzy potrzebny na start przygody z Linuksem.
 Baza wiedzy jest systematycznie uzupełniana o nowe znaleziska.</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/backup-serwera-do-aws-s3-z-u%C5%BCyciem-restic-dcf6fa12927641be8b29b189b87ae68b/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/backup-serwera-do-aws-s3-z-u%C5%BCyciem-restic-dcf6fa12927641be8b29b189b87ae68b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/backup-serwera-do-aws-s3-z-u%C5%BCyciem-restic-dcf6fa12927641be8b29b189b87ae68b/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/backup-serwera-do-aws-s3-z-u%C5%BCyciem-restic-dcf6fa12927641be8b29b189b87ae68b/</guid>
       <description>Backup serwera do AWS S3 (z użyciem restic) Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/backup-z-u%C5%BCyciem-rclone-do-chmury-backblaze-b2-b2db11a61d354ffc9c0f2afd77bb2852/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/backup-z-u%C5%BCyciem-rclone-do-chmury-backblaze-b2-b2db11a61d354ffc9c0f2afd77bb2852/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/backup-z-u%C5%BCyciem-rclone-do-chmury-backblaze-b2-b2db11a61d354ffc9c0f2afd77bb2852/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/backup-z-u%C5%BCyciem-rclone-do-chmury-backblaze-b2-b2db11a61d354ffc9c0f2afd77bb2852/</guid>
       <description>Backup z użyciem rclone do chmury Backblaze (B2) Tagi: narzędzia 🛠 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/cz%C4%99ste-b%C5%82%C4%99dy-przy-konfiguracji-nginx-stwarzaj%C4%85-47d8e9f9a739409aba1e7c5b3d6aa567/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/cz%C4%99ste-b%C5%82%C4%99dy-przy-konfiguracji-nginx-stwarzaj%C4%85-47d8e9f9a739409aba1e7c5b3d6aa567/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/cz%C4%99ste-b%C5%82%C4%99dy-przy-konfiguracji-nginx-stwarzaj%C4%85-47d8e9f9a739409aba1e7c5b3d6aa567/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/cz%C4%99ste-b%C5%82%C4%99dy-przy-konfiguracji-nginx-stwarzaj%C4%85-47d8e9f9a739409aba1e7c5b3d6aa567/</guid>
       <description>Częste błędy przy konfiguracji nginx, stwarzające zagrożenia dla security Tagi: nginx 🚀 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/diango-posgresql-i-nginx-na-ubuntu-3e68105e35034a1f929aaac4d991460e/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/diango-posgresql-i-nginx-na-ubuntu-3e68105e35034a1f929aaac4d991460e/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/diango-posgresql-i-nginx-na-ubuntu-3e68105e35034a1f929aaac4d991460e/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/diango-posgresql-i-nginx-na-ubuntu-3e68105e35034a1f929aaac4d991460e/</guid>
       <description>Diango, PosgreSQL i nginx na Ubuntu Tagi: pełen stack 🎛 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/dobre-praktyki-przy-pisaniu-docker-compose-1e56f26b68be472cacf6c42a4be7bcec/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/dobre-praktyki-przy-pisaniu-docker-compose-1e56f26b68be472cacf6c42a4be7bcec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/dobre-praktyki-przy-pisaniu-docker-compose-1e56f26b68be472cacf6c42a4be7bcec/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/dobre-praktyki-przy-pisaniu-docker-compose-1e56f26b68be472cacf6c42a4be7bcec/</guid>
       <description>Dobre praktyki przy pisaniu docker-compose Tagi: kontenery 📦 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-bezpiecznie-obs%C5%82ugiwa%C4%87-pliki-katalogi-tymczas-0fc3ca4e29934bb5aac85899e08a5a56/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-bezpiecznie-obs%C5%82ugiwa%C4%87-pliki-katalogi-tymczas-0fc3ca4e29934bb5aac85899e08a5a56/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-bezpiecznie-obs%C5%82ugiwa%C4%87-pliki-katalogi-tymczas-0fc3ca4e29934bb5aac85899e08a5a56/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-bezpiecznie-obs%C5%82ugiwa%C4%87-pliki-katalogi-tymczas-0fc3ca4e29934bb5aac85899e08a5a56/</guid>
       <description>Jak bezpiecznie obsługiwać pliki/katalogi tymczasowe w swoich skryptach? Tagi: wiedza 🤓 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-dzia%C5%82a-apache-kawka-wyja%C5%9Bnienie-na-poziomie-e16ae8dbcc52461c81fdbd515546c93f/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-dzia%C5%82a-apache-kawka-wyja%C5%9Bnienie-na-poziomie-e16ae8dbcc52461c81fdbd515546c93f/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-dzia%C5%82a-apache-kawka-wyja%C5%9Bnienie-na-poziomie-e16ae8dbcc52461c81fdbd515546c93f/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-dzia%C5%82a-apache-kawka-wyja%C5%9Bnienie-na-poziomie-e16ae8dbcc52461c81fdbd515546c93f/</guid>
       <description>Jak działa Apache Kawka (wyjaśnienie na poziomie 5-letniego dziecka) Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-dzia%C5%82a-rozwi%C4%85zywanie-dnsa-w-systemie-linux-ccaeab9af7b04259af6b7a74fafe6c7e/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-dzia%C5%82a-rozwi%C4%85zywanie-dnsa-w-systemie-linux-ccaeab9af7b04259af6b7a74fafe6c7e/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-dzia%C5%82a-rozwi%C4%85zywanie-dnsa-w-systemie-linux-ccaeab9af7b04259af6b7a74fafe6c7e/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-dzia%C5%82a-rozwi%C4%85zywanie-dnsa-w-systemie-linux-ccaeab9af7b04259af6b7a74fafe6c7e/</guid>
       <description>Jak działa rozwiązywanie DNSa w systemie Linux? Tagi: wiedza 🤓 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-dzia%C5%82a-sie%C4%87-routing-dns-dhcp-vpn-nat-itp-2f646fdbf50d4f7e871e12dc150784c6/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-dzia%C5%82a-sie%C4%87-routing-dns-dhcp-vpn-nat-itp-2f646fdbf50d4f7e871e12dc150784c6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-dzia%C5%82a-sie%C4%87-routing-dns-dhcp-vpn-nat-itp-2f646fdbf50d4f7e871e12dc150784c6/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-dzia%C5%82a-sie%C4%87-routing-dns-dhcp-vpn-nat-itp-2f646fdbf50d4f7e871e12dc150784c6/</guid>
       <description>Jak działa sieć? (routing, DNS, DHCP, VPN, NAT itp) - artykuł ma 2 części Tagi: Linux 🐧 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-dzia%C5%82aj%C4%85-kontenery-i-czym-jest-overlayfs-e4e7f3cd57274cb4b0593e72b3bc4978/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-dzia%C5%82aj%C4%85-kontenery-i-czym-jest-overlayfs-e4e7f3cd57274cb4b0593e72b3bc4978/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-dzia%C5%82aj%C4%85-kontenery-i-czym-jest-overlayfs-e4e7f3cd57274cb4b0593e72b3bc4978/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-dzia%C5%82aj%C4%85-kontenery-i-czym-jest-overlayfs-e4e7f3cd57274cb4b0593e72b3bc4978/</guid>
       <description>Jak działają kontenery i czym jest OverlayFS? Tagi: kontenery 📦 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-pisa%C4%87-jednolinijkowce-w-perlu-ce977b64c77d4ffb856163cf00999e8e/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-pisa%C4%87-jednolinijkowce-w-perlu-ce977b64c77d4ffb856163cf00999e8e/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-pisa%C4%87-jednolinijkowce-w-perlu-ce977b64c77d4ffb856163cf00999e8e/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-pisa%C4%87-jednolinijkowce-w-perlu-ce977b64c77d4ffb856163cf00999e8e/</guid>
       <description>Jak pisać jednolinijkowce w PERLu Tagi: narzędzia 🛠 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-postawi%C4%87-wiele-aplikacji-na-jednym-serwerze-fdda48323aaa4c24b6e5c8149de2bd20/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-postawi%C4%87-wiele-aplikacji-na-jednym-serwerze-fdda48323aaa4c24b6e5c8149de2bd20/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-postawi%C4%87-wiele-aplikacji-na-jednym-serwerze-fdda48323aaa4c24b6e5c8149de2bd20/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-postawi%C4%87-wiele-aplikacji-na-jednym-serwerze-fdda48323aaa4c24b6e5c8149de2bd20/</guid>
       <description>Jak postawić wiele aplikacji na jednym serwerze? (nginx+reverse proxy) Tagi: nginx 🚀 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-sprawi%C4%87-aby-zadania-z-crona-nie-nak%C5%82ada%C5%82y-si-dc2685e8a523448391eea34f795e5ce2/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-sprawi%C4%87-aby-zadania-z-crona-nie-nak%C5%82ada%C5%82y-si-dc2685e8a523448391eea34f795e5ce2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-sprawi%C4%87-aby-zadania-z-crona-nie-nak%C5%82ada%C5%82y-si-dc2685e8a523448391eea34f795e5ce2/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-sprawi%C4%87-aby-zadania-z-crona-nie-nak%C5%82ada%C5%82y-si-dc2685e8a523448391eea34f795e5ce2/</guid>
       <description>Jak sprawić, aby zadania z crona nie nakładały się na siebie? Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-tworzy%C4%87-w%C5%82asne-pliki-makefile-3bace1f23ae94b6f83edd690d380e8e0/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-tworzy%C4%87-w%C5%82asne-pliki-makefile-3bace1f23ae94b6f83edd690d380e8e0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-tworzy%C4%87-w%C5%82asne-pliki-makefile-3bace1f23ae94b6f83edd690d380e8e0/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-tworzy%C4%87-w%C5%82asne-pliki-makefile-3bace1f23ae94b6f83edd690d380e8e0/</guid>
       <description>Jak tworzyć własne pliki Makefile? Tagi: narzędzia 🛠 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-uruchomi%C4%87-sw%C3%B3j-program-skrypt-jako-us%C5%82ug%C4%99-s-a1823c4da5a14e079e3a1178d75a03bb/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-uruchomi%C4%87-sw%C3%B3j-program-skrypt-jako-us%C5%82ug%C4%99-s-a1823c4da5a14e079e3a1178d75a03bb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-uruchomi%C4%87-sw%C3%B3j-program-skrypt-jako-us%C5%82ug%C4%99-s-a1823c4da5a14e079e3a1178d75a03bb/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-uruchomi%C4%87-sw%C3%B3j-program-skrypt-jako-us%C5%82ug%C4%99-s-a1823c4da5a14e079e3a1178d75a03bb/</guid>
       <description>Jak uruchomić swój program/skrypt jako usługę systemd? Tagi: Linux 🐧 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-u%C5%BCywa%C4%87-curla-2a8baeff2a7941bab8447cce6d73be64/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-u%C5%BCywa%C4%87-curla-2a8baeff2a7941bab8447cce6d73be64/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-u%C5%BCywa%C4%87-curla-2a8baeff2a7941bab8447cce6d73be64/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-u%C5%BCywa%C4%87-curla-2a8baeff2a7941bab8447cce6d73be64/</guid>
       <description>Jak używać cURLa? Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-zdokeryzowa%C4%87-aplikacj%C4%99-pisan%C4%85-we-flasku-&#43;-m-760b4179f29b470198ec1f6db12eb375/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-zdokeryzowa%C4%87-aplikacj%C4%99-pisan%C4%85-we-flasku-&#43;-m-760b4179f29b470198ec1f6db12eb375/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-zdokeryzowa%C4%87-aplikacj%C4%99-pisan%C4%85-we-flasku-&#43;-m-760b4179f29b470198ec1f6db12eb375/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-zdokeryzowa%C4%87-aplikacj%C4%99-pisan%C4%85-we-flasku-&#43;-m-760b4179f29b470198ec1f6db12eb375/</guid>
       <description>Jak zdokeryzować aplikację pisaną we FLASKu + MySQL? Tagi: kontenery 📦 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-zrobi%C4%87-multi-stage-build-na-dockerze-eba85cc7c1c449e9869dd084771ac694/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-zrobi%C4%87-multi-stage-build-na-dockerze-eba85cc7c1c449e9869dd084771ac694/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-zrobi%C4%87-multi-stage-build-na-dockerze-eba85cc7c1c449e9869dd084771ac694/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/jak-zrobi%C4%87-multi-stage-build-na-dockerze-eba85cc7c1c449e9869dd084771ac694/</guid>
       <description>Jak zrobić multi-stage build na dockerze? Tagi: kontenery 📦 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/koncepcje-u%C5%BCywane-w-nginx-wprowadzenie-do-temat-0f0bee2ff98e4ffb92af0e9a1dc6f8aa/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/koncepcje-u%C5%BCywane-w-nginx-wprowadzenie-do-temat-0f0bee2ff98e4ffb92af0e9a1dc6f8aa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/koncepcje-u%C5%BCywane-w-nginx-wprowadzenie-do-temat-0f0bee2ff98e4ffb92af0e9a1dc6f8aa/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/koncepcje-u%C5%BCywane-w-nginx-wprowadzenie-do-temat-0f0bee2ff98e4ffb92af0e9a1dc6f8aa/</guid>
       <description>Koncepcje używane w Nginx - wprowadzenie do tematu Tagi: nginx 🚀 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/konfiguracja-reverse-proxy-na-nginx-z-u%C5%BCyciem-doc-39d25f3067704486b6abae133ea31b26/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/konfiguracja-reverse-proxy-na-nginx-z-u%C5%BCyciem-doc-39d25f3067704486b6abae133ea31b26/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/konfiguracja-reverse-proxy-na-nginx-z-u%C5%BCyciem-doc-39d25f3067704486b6abae133ea31b26/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/konfiguracja-reverse-proxy-na-nginx-z-u%C5%BCyciem-doc-39d25f3067704486b6abae133ea31b26/</guid>
       <description>Konfiguracja reverse proxy na Nginx z użyciem Dockera Tagi: kontenery 📦 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/lazydocker-narz%C4%99dzie-do-prostszego-zarz%C4%85dzania-2dd4a38412ec4e288988716d188f759b/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/lazydocker-narz%C4%99dzie-do-prostszego-zarz%C4%85dzania-2dd4a38412ec4e288988716d188f759b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/lazydocker-narz%C4%99dzie-do-prostszego-zarz%C4%85dzania-2dd4a38412ec4e288988716d188f759b/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/lazydocker-narz%C4%99dzie-do-prostszego-zarz%C4%85dzania-2dd4a38412ec4e288988716d188f759b/</guid>
       <description>LazyDocker - narzędzie do prostszego zarządzania kontenerami Tagi: kontenery 📦 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/narz%C4%99dzie-wyja%C5%9Bniaj%C4%85ce-polecenia-shellowe-dd1f9dfcb574466aa0b81df79db00760/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/narz%C4%99dzie-wyja%C5%9Bniaj%C4%85ce-polecenia-shellowe-dd1f9dfcb574466aa0b81df79db00760/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/narz%C4%99dzie-wyja%C5%9Bniaj%C4%85ce-polecenia-shellowe-dd1f9dfcb574466aa0b81df79db00760/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/narz%C4%99dzie-wyja%C5%9Bniaj%C4%85ce-polecenia-shellowe-dd1f9dfcb574466aa0b81df79db00760/</guid>
       <description>Narzędzie wyjaśniające polecenia shellowe Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/optymalizacja-rozmiaru-obrazu-dockerowego-z-14gb-21d3803104ed40138a744067a9f4372e/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/optymalizacja-rozmiaru-obrazu-dockerowego-z-14gb-21d3803104ed40138a744067a9f4372e/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/optymalizacja-rozmiaru-obrazu-dockerowego-z-14gb-21d3803104ed40138a744067a9f4372e/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/optymalizacja-rozmiaru-obrazu-dockerowego-z-14gb-21d3803104ed40138a744067a9f4372e/</guid>
       <description>Optymalizacja rozmiaru obrazu dockerowego (z 1,4GB do 22MB) Tagi: kontenery 📦 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/optymalizacja-ustawie%C5%84-mysql-1fc99a1c2261485a856c69b1dcc7f91a/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/optymalizacja-ustawie%C5%84-mysql-1fc99a1c2261485a856c69b1dcc7f91a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/optymalizacja-ustawie%C5%84-mysql-1fc99a1c2261485a856c69b1dcc7f91a/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/optymalizacja-ustawie%C5%84-mysql-1fc99a1c2261485a856c69b1dcc7f91a/</guid>
       <description>Optymalizacja ustawień MySQL Tagi: MySQL 🛢 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/pe%C5%82en-kurs-dockera-film-ponad-3h-6888c28301c04c6ca0e77956681e6eeb/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/pe%C5%82en-kurs-dockera-film-ponad-3h-6888c28301c04c6ca0e77956681e6eeb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/pe%C5%82en-kurs-dockera-film-ponad-3h-6888c28301c04c6ca0e77956681e6eeb/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/pe%C5%82en-kurs-dockera-film-ponad-3h-6888c28301c04c6ca0e77956681e6eeb/</guid>
       <description>Pełen kurs Dockera (film, ponad 3h) Tagi: kontenery 📦 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podr%C4%99cznik-administratora-nginx-wszystko-co-mu-c0ba5495efed4c5081d7f6e4dc9b5e0b/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podr%C4%99cznik-administratora-nginx-wszystko-co-mu-c0ba5495efed4c5081d7f6e4dc9b5e0b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podr%C4%99cznik-administratora-nginx-wszystko-co-mu-c0ba5495efed4c5081d7f6e4dc9b5e0b/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podr%C4%99cznik-administratora-nginx-wszystko-co-mu-c0ba5495efed4c5081d7f6e4dc9b5e0b/</guid>
       <description>Podręcznik administratora nginx - wszystko, co musisz wiedzieć Tagi: nginx 🚀 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-konfiguracji-htaccess-dla-apache-36cca830487a4ff0ab48dd893419d823/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podstawy-konfiguracji-htaccess-dla-apache-36cca830487a4ff0ab48dd893419d823/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-konfiguracji-htaccess-dla-apache-36cca830487a4ff0ab48dd893419d823/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podstawy-konfiguracji-htaccess-dla-apache-36cca830487a4ff0ab48dd893419d823/</guid>
       <description>Podstawy konfiguracji .htaccess dla Apache Tagi: apache ⛺️ Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-obs%C5%82ugi-aplikacji-strace-5dbafbdbb01141f8954ff5f5aa00baac/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podstawy-obs%C5%82ugi-aplikacji-strace-5dbafbdbb01141f8954ff5f5aa00baac/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-obs%C5%82ugi-aplikacji-strace-5dbafbdbb01141f8954ff5f5aa00baac/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podstawy-obs%C5%82ugi-aplikacji-strace-5dbafbdbb01141f8954ff5f5aa00baac/</guid>
       <description>Podstawy obsługi aplikacji strace Tagi: narzędzia 🛠 Poziom zaawansowania: zaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-obs%C5%82ugi-awk-przetwarzanie-tekstu-0111d2fc3bfe4234a457a1a63251569a/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podstawy-obs%C5%82ugi-awk-przetwarzanie-tekstu-0111d2fc3bfe4234a457a1a63251569a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-obs%C5%82ugi-awk-przetwarzanie-tekstu-0111d2fc3bfe4234a457a1a63251569a/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podstawy-obs%C5%82ugi-awk-przetwarzanie-tekstu-0111d2fc3bfe4234a457a1a63251569a/</guid>
       <description>Podstawy obsługi AWK (przetwarzanie tekstu) Tagi: narzędzia 🛠 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-obs%C5%82ugi-filesystemu-proc-c71f6ff9fb504d0c9a3abae02bacba76/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podstawy-obs%C5%82ugi-filesystemu-proc-c71f6ff9fb504d0c9a3abae02bacba76/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-obs%C5%82ugi-filesystemu-proc-c71f6ff9fb504d0c9a3abae02bacba76/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podstawy-obs%C5%82ugi-filesystemu-proc-c71f6ff9fb504d0c9a3abae02bacba76/</guid>
       <description>Podstawy obsługi filesystemu /proc/ Tagi: wiedza 🤓 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-obs%C5%82ugi-netcata-szwajcarski-scyzoryk-do-32d10cfd316941febbf9038d59e6d637/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podstawy-obs%C5%82ugi-netcata-szwajcarski-scyzoryk-do-32d10cfd316941febbf9038d59e6d637/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-obs%C5%82ugi-netcata-szwajcarski-scyzoryk-do-32d10cfd316941febbf9038d59e6d637/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podstawy-obs%C5%82ugi-netcata-szwajcarski-scyzoryk-do-32d10cfd316941febbf9038d59e6d637/</guid>
       <description>Podstawy obsługi NetCata (szwajcarski scyzoryk do obsługi sieci) Tagi: narzędzia 🛠 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-pisania-skrypt%C3%B3w-shellowych-ad1050b3432a4f57b0ed2f310afe3402/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podstawy-pisania-skrypt%C3%B3w-shellowych-ad1050b3432a4f57b0ed2f310afe3402/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-pisania-skrypt%C3%B3w-shellowych-ad1050b3432a4f57b0ed2f310afe3402/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podstawy-pisania-skrypt%C3%B3w-shellowych-ad1050b3432a4f57b0ed2f310afe3402/</guid>
       <description>Podstawy pisania skryptów shellowych Tagi: Linux 🐧 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-pracy-w-terminalu-linuksowym-poradnik-cf1b5659f9bb4d30ad23feb22311f7db/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podstawy-pracy-w-terminalu-linuksowym-poradnik-cf1b5659f9bb4d30ad23feb22311f7db/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-pracy-w-terminalu-linuksowym-poradnik-cf1b5659f9bb4d30ad23feb22311f7db/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podstawy-pracy-w-terminalu-linuksowym-poradnik-cf1b5659f9bb4d30ad23feb22311f7db/</guid>
       <description>Podstawy pracy w terminalu linuksowym - poradnik Tagi: wiedza 🤓 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-varnisha-reverse-proxy-z-cache-ddb75433d36c490baa64f5cd1d22c887/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podstawy-varnisha-reverse-proxy-z-cache-ddb75433d36c490baa64f5cd1d22c887/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-varnisha-reverse-proxy-z-cache-ddb75433d36c490baa64f5cd1d22c887/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/podstawy-varnisha-reverse-proxy-z-cache-ddb75433d36c490baa64f5cd1d22c887/</guid>
       <description>Podstawy Varnisha (reverse proxy z cache) Tagi: narzędzia 🛠 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/polecenia-do-konfiguracji-sieci-na-linuksie-przes-da83fe535f6542b3ac76351e49717b0f/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/polecenia-do-konfiguracji-sieci-na-linuksie-przes-da83fe535f6542b3ac76351e49717b0f/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/polecenia-do-konfiguracji-sieci-na-linuksie-przes-da83fe535f6542b3ac76351e49717b0f/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/polecenia-do-konfiguracji-sieci-na-linuksie-przes-da83fe535f6542b3ac76351e49717b0f/</guid>
       <description>Polecenia do konfiguracji sieci na Linuksie (przestarzałe i ich nowoczesne odpowiedniki) Tagi: narzędzia 🛠 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/poradnik-do-xargs-czyli-jak-pisa%C4%87-lepsze-skrypt-f76b18d5858044f1aa995cfab8986fb7/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/poradnik-do-xargs-czyli-jak-pisa%C4%87-lepsze-skrypt-f76b18d5858044f1aa995cfab8986fb7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/poradnik-do-xargs-czyli-jak-pisa%C4%87-lepsze-skrypt-f76b18d5858044f1aa995cfab8986fb7/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/poradnik-do-xargs-czyli-jak-pisa%C4%87-lepsze-skrypt-f76b18d5858044f1aa995cfab8986fb7/</guid>
       <description>Poradnik do XARGS - czyli jak pisać lepsze skrypty shellowe Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/praca-na-zbiorach-danych-z-u%C5%BCyciem-grep-cut-awk-f9d0c5568a7c49268223068a6d473f15/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/praca-na-zbiorach-danych-z-u%C5%BCyciem-grep-cut-awk-f9d0c5568a7c49268223068a6d473f15/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/praca-na-zbiorach-danych-z-u%C5%BCyciem-grep-cut-awk-f9d0c5568a7c49268223068a6d473f15/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/praca-na-zbiorach-danych-z-u%C5%BCyciem-grep-cut-awk-f9d0c5568a7c49268223068a6d473f15/</guid>
       <description>Praca na zbiorach danych z użyciem grep, cut, awk, sort itp Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/praca-w-terminalu-film-absolutne-podstawy-f56fc6534e3c4aa19457cd64b03f4e88/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/praca-w-terminalu-film-absolutne-podstawy-f56fc6534e3c4aa19457cd64b03f4e88/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/praca-w-terminalu-film-absolutne-podstawy-f56fc6534e3c4aa19457cd64b03f4e88/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/praca-w-terminalu-film-absolutne-podstawy-f56fc6534e3c4aa19457cd64b03f4e88/</guid>
       <description>Praca w terminalu (film) - absolutne podstawy Tagi: wiedza 🤓 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/przyspieszanie-nginx-9x-z-u%C5%BCyciem-thread-pools-9956d6ec9bfd43baa45311baa4a51016/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/przyspieszanie-nginx-9x-z-u%C5%BCyciem-thread-pools-9956d6ec9bfd43baa45311baa4a51016/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/przyspieszanie-nginx-9x-z-u%C5%BCyciem-thread-pools-9956d6ec9bfd43baa45311baa4a51016/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/przyspieszanie-nginx-9x-z-u%C5%BCyciem-thread-pools-9956d6ec9bfd43baa45311baa4a51016/</guid>
       <description>Przyspieszanie Nginx (9x!) z użyciem thread-pools Tagi: nginx 🚀 Poziom zaawansowania: zaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/sprawd%C5%BA-jak-sprawnie-pos%C5%82ugujesz-si%C4%99-terminalem-719b70fc468447dc9c7b79504986e15c/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/sprawd%C5%BA-jak-sprawnie-pos%C5%82ugujesz-si%C4%99-terminalem-719b70fc468447dc9c7b79504986e15c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/sprawd%C5%BA-jak-sprawnie-pos%C5%82ugujesz-si%C4%99-terminalem-719b70fc468447dc9c7b79504986e15c/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/sprawd%C5%BA-jak-sprawnie-pos%C5%82ugujesz-si%C4%99-terminalem-719b70fc468447dc9c7b79504986e15c/</guid>
       <description>Sprawdź jak sprawnie posługujesz się terminalem (gra) Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/sztuczki-u%C5%82atwiaj%C4%85ce-prace-z-bashem-c6f743b7ff09481f90072357037c01b8/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/sztuczki-u%C5%82atwiaj%C4%85ce-prace-z-bashem-c6f743b7ff09481f90072357037c01b8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/sztuczki-u%C5%82atwiaj%C4%85ce-prace-z-bashem-c6f743b7ff09481f90072357037c01b8/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/sztuczki-u%C5%82atwiaj%C4%85ce-prace-z-bashem-c6f743b7ff09481f90072357037c01b8/</guid>
       <description>Sztuczki ułatwiające prace z Bashem Tagi: narzędzia 🛠 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/tunele-ssh-jak-je-tworzy%C4%87-19b47a7f9189408da74f67e5cceb912d/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/tunele-ssh-jak-je-tworzy%C4%87-19b47a7f9189408da74f67e5cceb912d/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/tunele-ssh-jak-je-tworzy%C4%87-19b47a7f9189408da74f67e5cceb912d/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/tunele-ssh-jak-je-tworzy%C4%87-19b47a7f9189408da74f67e5cceb912d/</guid>
       <description>Tunele SSH - jak je tworzyć? Tagi: Linux 🐧 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/ustawianie-routingu-statycznego-w-linuksie-c68c4fa68f7947b6abce0ec8143c78d1/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/ustawianie-routingu-statycznego-w-linuksie-c68c4fa68f7947b6abce0ec8143c78d1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/ustawianie-routingu-statycznego-w-linuksie-c68c4fa68f7947b6abce0ec8143c78d1/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/ustawianie-routingu-statycznego-w-linuksie-c68c4fa68f7947b6abce0ec8143c78d1/</guid>
       <description>Ustawianie routingu statycznego w Linuksie Tagi: Linux 🐧 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/ustawienia-firewalla-ufw-na-ubuntu-7d62e780a8134e5097c5fca2db5d8133/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/ustawienia-firewalla-ufw-na-ubuntu-7d62e780a8134e5097c5fca2db5d8133/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/ustawienia-firewalla-ufw-na-ubuntu-7d62e780a8134e5097c5fca2db5d8133/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/ustawienia-firewalla-ufw-na-ubuntu-7d62e780a8134e5097c5fca2db5d8133/</guid>
       <description>Ustawienia firewalla (UFW) na Ubuntu Tagi: Linux 🐧 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/wst%C4%99p-do-kubernetes-dla-zupe%C5%82nie-zielonych-c1d3838ea2394d9a9ec8fb19226103b9/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/wst%C4%99p-do-kubernetes-dla-zupe%C5%82nie-zielonych-c1d3838ea2394d9a9ec8fb19226103b9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/wst%C4%99p-do-kubernetes-dla-zupe%C5%82nie-zielonych-c1d3838ea2394d9a9ec8fb19226103b9/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/wst%C4%99p-do-kubernetes-dla-zupe%C5%82nie-zielonych-c1d3838ea2394d9a9ec8fb19226103b9/</guid>
       <description>Wstęp do Kubernetes dla zupełnie zielonych Tagi: wiedza 🤓 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/wst%C4%99p-do-programowania-w-bashu-52d7be90787145fea872541f15d17b98/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/wst%C4%99p-do-programowania-w-bashu-52d7be90787145fea872541f15d17b98/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/wst%C4%99p-do-programowania-w-bashu-52d7be90787145fea872541f15d17b98/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/wst%C4%99p-do-programowania-w-bashu-52d7be90787145fea872541f15d17b98/</guid>
       <description>Wstęp do programowania w Bashu Tagi: Linux 🐧 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/wszystko-co-musisz-wiedzie%C4%87-o-syslogu-2d0e43b0c7a74c9ca068b5cf14b40b96/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/wszystko-co-musisz-wiedzie%C4%87-o-syslogu-2d0e43b0c7a74c9ca068b5cf14b40b96/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/wszystko-co-musisz-wiedzie%C4%87-o-syslogu-2d0e43b0c7a74c9ca068b5cf14b40b96/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/wszystko-co-musisz-wiedzie%C4%87-o-syslogu-2d0e43b0c7a74c9ca068b5cf14b40b96/</guid>
       <description>Wszystko, co musisz wiedzieć o Syslogu Tagi: wiedza 🤓 Poziom zaawansowania: średniozaawansowany</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/wyja%C5%9Bnienie-terminologii-zwi%C4%85zanej-z-kontenerami-92751e57f7684a839e6373167b0521bc/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/wyja%C5%9Bnienie-terminologii-zwi%C4%85zanej-z-kontenerami-92751e57f7684a839e6373167b0521bc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/wyja%C5%9Bnienie-terminologii-zwi%C4%85zanej-z-kontenerami-92751e57f7684a839e6373167b0521bc/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/wyja%C5%9Bnienie-terminologii-zwi%C4%85zanej-z-kontenerami-92751e57f7684a839e6373167b0521bc/</guid>
       <description>Wyjaśnienie terminologii związanej z kontenerami i konteneryzacją Tagi: kontenery 📦 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/zarz%C4%85dzanie-backupami-przez-przegl%C4%85dark%C4%99-rdiff-825e2ad410f24354a3ae9fac944cc524/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/zarz%C4%85dzanie-backupami-przez-przegl%C4%85dark%C4%99-rdiff-825e2ad410f24354a3ae9fac944cc524/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/zarz%C4%85dzanie-backupami-przez-przegl%C4%85dark%C4%99-rdiff-825e2ad410f24354a3ae9fac944cc524/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/biblioteka_mikrusa/zarz%C4%85dzanie-backupami-przez-przegl%C4%85dark%C4%99-rdiff-825e2ad410f24354a3ae9fac944cc524/</guid>
       <description>Zarządzanie backupami przez przeglądarkę (rdiffweb) Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/blad_ssh_remote_host_identification_has_changed/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/blad_ssh_remote_host_identification_has_changed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/blad_ssh_remote_host_identification_has_changed/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/blad_ssh_remote_host_identification_has_changed/</guid>
       <description>Błąd SSH (Remote Host Identification has changed!) Klient SSH chce obronić Cię przed atakami man-in-the-middle (MITM). Realizuje to w ten sposób, że przy każdym połączeniu z wybranym przez Ciebie serwerem, sprawdzany jest &amp;ldquo;odcisk palca&amp;rdquo; (fingerprint) serwera. Jeśli ulegnie on zmianie, to oznacza, że ktoś majstrował przy Twoim serwerze lub nie jest to ten serwer, którego się spodziewasz.
 Jest jednak zupełnie naturalna sytuacja, w której odcisk palca serwera się zmienia i nie jest to niebezpieczne.</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/cytrus/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/cytrus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/cytrus/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/cytrus/</guid>
       <description>Cytrus Cytrus jest usługą współdzielonego serwera WWW (jest to Nginx), dzięki któremu bez konieczności instalacji serwera WWW jesteś w stanie hostować strony internetowe.
 Usługa ta natywnie wspiera strony statyczne oraz te tworzone w języku PHP (np. Wordpress).
 Dodatkowe zalety Cytrusa, to:
@@ -399,35 +399,35 @@ możliwość przekierowania domeny na dowolny adres IP oraz port (usługa WWW ni
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/cytrus_nie_podaje_stron/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/cytrus_nie_podaje_stron/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/cytrus_nie_podaje_stron/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/cytrus_nie_podaje_stron/</guid>
       <description>Cytrus nie podaje stron Istnieje kilka przyczyn tego problemu
 czy reinstalowałeś swój serwer? Jeśli tak było, aktywuj (w menu &amp;ldquo;pomoc&amp;rdquo;) Cytrusa ponownie czy wszystkie pliki i katalogi w /cytrus/ posiadają ownera i grupę ustawionego na &amp;ldquo;cytrus&amp;rdquo;? sprawdź chmody na katalogi w /cytrus/ - czy mają ustawiony bit wykonywalności (x)? Jeśli problem nie został rozwiązany, skontaktuj się z kimś z adminów.
 Powrót do strony głównej</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/darmowa_subdomena_dla_vps/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/darmowa_subdomena_dla_vps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/darmowa_subdomena_dla_vps/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/darmowa_subdomena_dla_vps/</guid>
       <description>Darmowa subdomena dla VPS Serwery VPS na Mikrusie nie posiadają własnych adresów IPv4, a jedynie udostępnione porty TCP. Nie za fajnie byłoby jednak mieć adres strony w stylu mojastrona:12345 ☹️
 Masz do dyspozycji jednak adres IPv6, dzięki czemu podpinając swoją domenę w usłudze CloudFlare, możesz przetunelować ruch IPv4 na IPv6 i bez najmniejszych problemów pokazać swoją stronę czytelnikom. Tylko&amp;hellip; na początek musisz mieć/kupić domenę.
 Tak się składa, że w panelu Mikrusa możesz wyklikać sobie darmową subdomenę w naszej domenie i podpiąć ją do swojego serwera.</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/dashboard/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/dashboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/dashboard/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/dashboard/</guid>
       <description>Dashboard Dashboard to prosta aplikacja, która umożliwia uruchamianie zdefiniowanych (przez Ciebie) poleceń na Mikrusie przy użyciu jednego kliknięcia.
 Najprościej jest porównać tę usługę do pilota od TV. Masz tam wiele przycisków, a każdy z nich realizuje pewien cel. Możesz np. przypisać akcję aktualizacji systemu do pierwszego przycisku, restart Apache do drugiego, a np. operację ’git pull’ do trzeciego. Dzięki takiej konfiguracji jesteś w stanie zarządzać serwerem (a przynajmniej najczęstszymi operacjami) bez logowania się na VPSa.</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/django_postgresql/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/django_postgresql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/django_postgresql/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/django_postgresql/</guid>
       <description>Django + PostgreSQL Autorem artykułu jest Seweryn Jagusiak
 W tym artykule opiszę jak postawić aplikację Django (nie wykorzystując w tym celu Dockera), której możemy używać w wersji produkcyjnej na pojedynczym Mikrusie (nawet w wersji 1.0), używając dystrybucji Ubuntu.
 Współdzielony PostgreSQL Przed zmianami, uzyskajmy dostęp do współdzielonego serwera PostgreSQL.
@@ -436,17 +436,17 @@ W panelu głównym (https://mikr.us/panel/) po kliknięciu w logi bazy powinniś
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/error_521_na_cloudflare/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/error_521_na_cloudflare/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/error_521_na_cloudflare/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/error_521_na_cloudflare/</guid>
       <description>Error 521 na CloudFlare Jeśli otrzymujesz ten błąd, to sprawdź następujące przypadki
 Czy zainstalowałeś u siebie dowolny serwer WWW i słucha on na adresacji IPv6 (nie ipv4!)? sprawdź, czy nie ustawiłeś firewalla blokującego port 80 w ustawieniach CloudFlare prawdopodobnie masz ustawiony tryb połączenia na FULL lub STRICT. Zmień na FLEXIBLE. Powrót do strony głównej</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/faq_najczesciej_zadawane_pytania/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/faq_najczesciej_zadawane_pytania/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/faq_najczesciej_zadawane_pytania/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/faq_najczesciej_zadawane_pytania/</guid>
       <description>FAQ - najczęściej zadawane pytania Sprawy przed zakupem Czy otrzymam fakturę?
 Oczywiście! Podczas składania zamówienia podaj dane do niej. Automat prześle Ci fakturę godzinę po opłaceniu zamówienia. Mikrus obsługiwany jest przez legalnie działającą w Polsce firmę, więc płacimy podatki :)
 Cena podana na stronie to netto, czy brutto?
@@ -456,9 +456,9 @@ Cena po roku nie zmienia się. Koszt serwera po upływie abonamentu będzie wyno
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/jak_wysylac_pliki_na_mikrusa/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/jak_wysylac_pliki_na_mikrusa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/jak_wysylac_pliki_na_mikrusa/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/jak_wysylac_pliki_na_mikrusa/</guid>
       <description>Jak wysyłać pliki na Mikrusa? Sugerowanym rozwiązaniem przy uploadzie plików na serwer jest użycie SCP.
 Aby skorzystać z SCP, potrzebujesz znać następujące rzeczy:
 na którym serwerze masz VPSa? np. srv08.mikr.us jaki jest Twój numer portu SSH? np. 10999 Jeśli lubisz pracować w terminalu i do tego masz zanstalowane narzędzie &amp;lsquo;scp&amp;rsquo;, to wystarczy wydać następujące polecenie.
@@ -466,9 +466,9 @@ scp -P 10999 /sciezka/na/twoim/dysku/plik.zip root@srv08.mikr.us:/sciezka/na/ser
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/konfiguracja_mysql_mariadb/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/konfiguracja_mysql_mariadb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/konfiguracja_mysql_mariadb/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/konfiguracja_mysql_mariadb/</guid>
       <description>Konfiguracja MySQL/MariaDB Chcąc postawić na Mikrusie własną bazę danych (możesz także skorzystać ze współdzielonej jeśli chcesz), wykonaj poniższe kroki.
 Zaktualizuj pakiety w systemie
 apt update Zainstaluj odpowiednie pakiety - my polecamy bazę MariaDB, która jest w 100% kompatybilna z MySQL
@@ -477,17 +477,17 @@ Zakładanie bazy danych Na początek zaloguj się do bazy poniższym poleceniem 
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/logowanie_na_serwery/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/logowanie_na_serwery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/logowanie_na_serwery/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/logowanie_na_serwery/</guid>
       <description>Logowanie na serwery Aby zalogować się na serwer, należy:
 zaopatrzyć się w klienta usługi SSH. Może to być np. Program PuTTy na Windowsa lub polecenie &amp;lsquo;ssh&amp;rsquo; na Linuksa, Maca lub Windowsa (PowerShell lub command line). W kliencie należy podać odpowiednią nazwę hosta, czyli np. srv03.mikr.us, srv06.mikr.us itd. (nazwa podana jest w mailu powitalnym). Jako numer portu podajemy pięciocyfrową liczbę będącą sumą liczby 10000 i numeru Twojej maszyny. Czyli jeśli masz maszynę o numerze 123 to Twój numer portu to 10123.</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/marian/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/marian/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/marian/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/marian/</guid>
       <description>M.A.R.I.A.N Marian, to oczywiście skrót od:
 Manually Activated Recovery of Infrastructure, Applications and Networking
 To narzędzie do automatycznego diagnozowania problemów z serwerem. Jeśli Twój serwer z jakiegoś powodu nie działa tak, jak powinien lub połączenie się z nim nie jest możliwe, to MARIAN Ci w tym pomoże.
@@ -496,9 +496,9 @@ Dodatkową zaletą Mariana jest możliwość uruchomienia dowolnej listy polece�
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/nextcloud/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/nextcloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/nextcloud/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/nextcloud/</guid>
       <description>NextCloud Jedną z usług oferowanych w ramach Mikrusa jest współdzielony serwer NextClouda.
 Jest to usługa dodatkowo płatna, dostępna w kilku rozmiarach (obecnie 25GB i 50GB).
 Na współdzielonej instancji otrzymujesz konto użytkownika i możesz z niej korzystać podobnie jak z samodzielnie postawionej wersji.
@@ -506,9 +506,9 @@ Co to jest NextCloud? To usługa przechowywania plików w chmurze. Coś jak Drop
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/nginx_php_mysql/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/nginx_php_mysql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/nginx_php_mysql/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/nginx_php_mysql/</guid>
       <description>NginX + PHP + MySQL Aby postawić stack LEMP, postępuj według poniższej instrukcji
 Na początek zaktualizuj pakiety w systemie
 apt update Następnie zainstaluj wymagane pakiety
@@ -519,27 +519,27 @@ service nginx restart Teraz musisz tylko podpiąć pod to jakąś domenę przez 
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/o_co_chodzi_z_ipv6/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/o_co_chodzi_z_ipv6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/o_co_chodzi_z_ipv6/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/o_co_chodzi_z_ipv6/</guid>
       <description>O co chodzi z IPv6? Serwery Mikrusa działają w trybie “głównie IPv6”. Nie są to serwery “IPv6-only”. Brzmi to dość skomplikowanie, ale już tłumaczę, o co chodzi i jak to działa.
 Spis treści
 Czym jest IPv6? Komputery podłączone do internetu posiadają swoje adresy IP, dzięki czemu mogą być widoczne w sieci i mogą porozumiewać się z innymi komputerami. Przykładowo, możesz posiadać adres np. 1.2.3.4. Taka adresacja nazywana jest “Internet Protocol version 4” albo w skrócie IPv4.</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/ograniczenia_techniczne_mikrusa/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/ograniczenia_techniczne_mikrusa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/ograniczenia_techniczne_mikrusa/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/ograniczenia_techniczne_mikrusa/</guid>
       <description>Ograniczenia techniczne Mikrusa Istnieją rzeczy, których nie da się zrobić na VPSach Mikrusa.
 Poniżej lista tych ograniczeń 👇
 Mikrusy to kontenery, a nie VPSy z pełną wirtualizacją. Nie da się więc zmienić wersji kernela oraz niemożliwe jest postawienie na nich innych systemów operacyjnych takich jak Unix czy Windows Mikrusy działają na adresacji IPv6 i posiadają kilka wystawionych portów na IPv4. Są to jednak losowe numery portów, przez co niemożliwe jest postawienie własnego serwera pocztowego (do poczty przychodzącej) czy serwera DNS, jak i każdej usługi, której numer portu nie może być zmieniony.</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/outsider/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/outsider/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/outsider/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/outsider/</guid>
       <description>Outsider Outsider to zewnętrzny serwer z zainstalowanym DirectAdminem, do którego masz dostęp od Mikrusa 2.0 wzwyż.
 Dlaczego taka usługa powstała?
 Na Mikrusie nie da się postawić serwera pocztowego ani serwera DNS. Outsider daje Ci możliwość korzystania z tych usług. Możesz założyć tam dowolną liczbę skrzynek pocztowych, a nawet dodać własną domenę do DNSa i nią zarządzać.
@@ -547,9 +547,9 @@ Co więcej, usługi uruchomione na Outsiderze nijak nie obciążają Twojego gł
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/petla_przekierowan_na_cloudflare_ssl/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/petla_przekierowan_na_cloudflare_ssl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/petla_przekierowan_na_cloudflare_ssl/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/petla_przekierowan_na_cloudflare_ssl/</guid>
       <description>Pętla przekierowań na CloudFlare (SSL) Najprawdopodobniej ustawiłeś połączenie typu FLEX na CloudFlare, a po stronie swojego serwera WWW wymuszasz przekierowanie na HTTPS.
 Możliwe rozwiązania:
 wymuszaj przekierowanie po stronie CloudFlare (aktywuj &amp;ldquo;Always HTTPS&amp;rdquo;) zmień połączenie na STRICT lub FULL i wtedy korzystaj z SSLa po stronie Mikrusa i CLoudFlare jednocześnie Jeśli nie masz pojęcia o co chodzi w drugiej opcji, to pierwsza brzmi jakby bardziej była dla Ciebie ;)
@@ -557,35 +557,35 @@ Powrót do strony głównej</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/podpiecie_domeny_przez_cloudflare/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/podpiecie_domeny_przez_cloudflare/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/podpiecie_domeny_przez_cloudflare/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/podpiecie_domeny_przez_cloudflare/</guid>
       <description>Podpięcie domeny przez CloudFlare Najprostszym sposobem na podpięcie własnej domeny do serwera jest zupełnie darmowa usługa CloudFlare.
 CO TO JEST CLOUDFLARE? To serwis, który umożliwia cachowanie statycznego contentu na Twojej stronie (pliki graficzne, JS, CSS itp), a w konsekwencji przyspieszenie działania strony, ale oferuje on także usługę tunelującą połączenia IPv4 na adresy IPv6 i to dla mikrusowców jest super ważne :)
 PO CO MI CLOUDFLARE? Adresacja IPv6 działa tylko u ludzi, których dostawca internetu oferuje obsługę adresów IPv6, a to niestety nie jest naszym kraju częste.</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/polaczenie_z_mikrusa_do_lokalnego_serwera/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/polaczenie_z_mikrusa_do_lokalnego_serwera/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/polaczenie_z_mikrusa_do_lokalnego_serwera/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/polaczenie_z_mikrusa_do_lokalnego_serwera/</guid>
       <description>Połączenie z Mikrusa do lokalnego serwera Serwer Mikrusa możesz wykorzystać do połączenia się do swojego lokalnego serwera i nie potrzebujesz w tym celu stawiać usługi typu VPN.
 Jeśli masz dynamiczne IP, to wiesz, że nie możesz polegać na adresie IP. Wtedy przyda Ci się tzw. tunelowanie SSH.
 Rozwiązanie jest proste: to Twój serwer czeka na nawiązanie połączenia z konkretnym portem, a Twój domowy komputer (ze zmiennym IP) łączy się do Mikrusa (który ma stałe IP).</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/polecanie_serwera_innym/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/polecanie_serwera_innym/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/polecanie_serwera_innym/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/polecanie_serwera_innym/</guid>
       <description>Polecanie serwera innym Posiadając serwer Mikrusa, możesz zdobyć dodatkowe, darmowe miesiące do swojego abonamentu. Wystarczy, że namówisz kogoś do kupna serwera, dzieląc się z nim swoim linkiem polecającym. Linka takiego znajdziesz w panelu użytkownika zaraz po zalogowaniu się.
 Jeśli planujesz reklamować serwery Mikrusa w dowolnym miejscu, to upewnij się, że jest to tam dozwolone i mile widziane. Nie spamuj! Wklejanie swojego reflinka np. na losowych grupach na Facebooka przeważnie nie kończy się dobrze.</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/pusher/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/pusher/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/pusher/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/pusher/</guid>
       <description>Pusher Pusher jest prostym narzędziem pozwalającym Ci wysyłać maile do samego siebie, bez konieczności instalowania serwera mailowego.
 Wywołuje się go poleceniem &amp;ldquo;pusher&amp;rdquo; np. tak:
 cat /etc/passwd | pusher Przykładowe zastosowania:
@@ -597,9 +597,9 @@ pusher logowanie_roota Pusher czyta ze standardowego wejścia. Jeśli chcesz zmi
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/reverse_proxy_na_nginx/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/reverse_proxy_na_nginx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/reverse_proxy_na_nginx/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/reverse_proxy_na_nginx/</guid>
       <description>Reverse Proxy na nginX Jeśli chciałbyś na porcie 80 lub 443 swojego Mikrusa wystawić aplikację działającą na innym, niestandardowym porcie, czy nawet na Warsztacie, to potrzebujesz wynalazku jakim jest Reverse Proxy.
 Zakładam, że postawiłeś już u siebie nginX.
 Znajdź wirtualny host, który chcesz edytować - domyślnie będzie to:
@@ -608,9 +608,9 @@ location / { proxy_set_header Host $host; proxy_set_header X-Forwarded-For $remo
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/skrypty_noobs/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/skrypty_noobs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/skrypty_noobs/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/skrypty_noobs/</guid>
       <description>Skrypty NOOBS NOOBS (New Out Of the Box System) to zestaw skryptów do szybkiego stawiania usług na Mikrusie. Jest to projekt otwartoźródłowy i każdy z użytkowników może rozbudować kolekcje o własne skrypty.
 https://github.com/unkn0w/noobs/
 Dzięki przygotowanym skryptom łatwo zainstalujesz Apache, OpenVZ, Jenkinsa, Webmina, Zerotier i kilkadziesiąt innych usług.
@@ -619,9 +619,9 @@ Powrót do strony głównej</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/storage/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/storage/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/storage/</guid>
       <description>Storage Pod nazwą “Storage” kryje się dysk sieciowy, na którym oferujemy dodatkową przestrzeń dyskową dla użytkowników Mikrusa.
 Przestrzeń ‘Storage’ jest dodatkowo płatna i dostępna w czterech pakietach:
 125GB 250GB 500GB 1000GB Storage na Mikrusach 1.0 - 3.0 W przypadku wspomnianych wersji Mikrusa, Twoja przestrzeń dyskowa jest zamontowana pod katalog /storage/. Każdorazowe podpięcie lub odpięcie (np. gdy skończy Ci się abonament na dysk) wymaga restartu serwera.
@@ -630,9 +630,9 @@ Przy tym modelu Mikrusa, dodatkowy dysk twardy nie jest katalogiem, a fizycznym 
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/strych_backupy/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/strych_backupy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/strych_backupy/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/strych_backupy/</guid>
       <description>Strych (backupy) Strych to współdzielony serwer backupowy, na którym każdy z użytkowników posiada 200MB przestrzeni do przechowywania własnych plików. Aby uzyskać do niego dostęp, wystarczy o niego poprosić przez panel, klikając odpowiednią opcję w sekcji &amp;ldquo;Backup&amp;rdquo;.
 Warto efektywnie wykorzystać tę przestrzeń, wykonując tam nie pełne backupy, a jedynie przyrostowe.
 JAK TO ZROBIĆ? Poniższa instrukcja przeznaczona jest dla serwerów 2.0.
@@ -640,9 +640,9 @@ Aktywuj w panelu dostęp do serwera backupowego (menu &amp;ldquo;Backup&amp;rdqu
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/szybka_subdomena/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/szybka_subdomena/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/szybka_subdomena/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/szybka_subdomena/</guid>
       <description>Szybka subdomena Jeśli chcesz podpiąć tymczasową, darmową subdomenę do swojej aplikacji postawionej na Mikrusie, możesz zrobić to za pomocą naszego narzędzia o nazwie “domena”.
 Oto wideo instrukcja:
 https://vimeo.com/901911932?share=copy
@@ -650,18 +650,18 @@ Podpięcie losowej subdomeny do wybranego portu domena 555 Podpięcie wybranej s
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/too_many_authentication_failures_preauth/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/too_many_authentication_failures_preauth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/too_many_authentication_failures_preauth/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/too_many_authentication_failures_preauth/</guid>
       <description>Too many authentication failures [preauth] Błąd podany w tytule może wystąpić podczas łączenia się do serwera i to niezależnie od tego, czy logujesz się hasłem, czy kluczem SSH.
 Winę ponoszą jednak klucze - dlaczego tak się dzieje?
 Najczęstszym powodem takiej sytuacji jest zbyt duża liczba kluczy załadowanych do agenta SSH (ssh-agent). Jest szansa, że masz tam wpisanych np. 7-8 kluczy. Domyślna konfiguracja SSH zezwala jedynie na 5-6 (zależnie od systemu) następujących po sobie błędnych logowań, a następnie odrzuca kolejne próby połączenia.</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/udost%C4%99pnione_porty/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/udost%C4%99pnione_porty/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/udost%C4%99pnione_porty/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/udost%C4%99pnione_porty/</guid>
       <description>Udostępnione porty Wraz ze swoim serwerem VPS otrzymujesz trzy domyślne porty TCP/UDP:
 10000 + ID 20000 + ID 30000 + ID Gdzie ID to numer Twojej maszyny.
 Pierwszy z portów używany jest do logowania przez SSH, więc raczej nie wykorzystasz go do hostowania innych usług. Dwa pozostałe porty to porty ogólnego przeznaczenia.
@@ -669,9 +669,9 @@ Jeśli liczba portów okaże się dla Ciebie niewystarczająca, to w panelu uż
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/uzywaj_kluczy_ssh/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/uzywaj_kluczy_ssh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/uzywaj_kluczy_ssh/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/uzywaj_kluczy_ssh/</guid>
       <description>Używaj kluczy SSH! Uzyskując dostęp do Mikrusa po raz pierwszy, w mailu powitalnym dostajesz hasło dla użytkownika root. Możesz wykorzystać je do pierwszego zalogowania się, lub możesz wygenerować nowe hasło za pośrednictwem panelu sterowania.
 Zachęcam jednak do tego, abyś przestał używać haseł, a zaczął pracę z kluczami SSH. Znacząco podniesie to bezpieczeństwo Twojego serwera.
 Aby zacząć używać kluczy, wydaj następujące polecenie na Twoim komputerze (nie na Mikrusie!):
@@ -679,9 +679,9 @@ ssh-keygen -t rsa -b 4096 -C mikrus -f ~/.</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/wireguard/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/wireguard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/wireguard/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/wireguard/</guid>
       <description>Wireguard Dla posiadaczy Mikrusa 2.0 dostępna jest bezpłatna, współdzielona instancja Wireguarda.
 Aby zdobyć do niej dostęp, wystarczy jedynie aktywować go w panelu użytkownika.
 Serwer wyjściowy wspólnego Wireguarda fizycznie znajduje się w Finlandii i stoi na łączu 1Gbps.
@@ -690,9 +690,9 @@ Powrót do strony głównej</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikrus.wkro.pl/wspoldzielone_bazy_danych/</link>
+      <link>https://koliwbr.github.io/mikrus-wiki/wspoldzielone_bazy_danych/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikrus.wkro.pl/wspoldzielone_bazy_danych/</guid>
+      <guid>https://koliwbr.github.io/mikrus-wiki/wspoldzielone_bazy_danych/</guid>
       <description>Współdzielone bazy danych Pamięć RAM to jeden z cenniejszych zasobów na Twoim serwerze. Istnieje jednak szansa, że będziesz potrzebować do projektu bazy MySQL, czy PostgreSQL. Nie musisz jednak samodzielnie jej stawiać.
 Posiadamy współdzielone serwery baz danych, na których możesz założyć jedną bazę i używać jej &amp;ldquo;w granicach przyzwoitości&amp;rdquo;.
 Umawiamy się na limit 100MB danych na użytkownika, ale admini są bardzo pobłażliwi i nie egzekwują zbyt mocno tego limitu ;)

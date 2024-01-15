@@ -1,4 +1,4 @@
-baseURL: 'https://mikrus.wkro.pl/'
+baseURL: 'https://koliwbr.github.io/mikrus-wiki/'
 languageCode: pl
 title: Mikrus - Don't Panic!
-theme: "PaperMod"
+theme: "papermod"
