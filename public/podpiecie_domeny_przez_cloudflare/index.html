@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Mikrus - Don&#39;t Panic!</title>
+<meta name="keywords" content="">
+<meta name="description" content="Podpięcie domeny przez CloudFlare Najprostszym sposobem na podpięcie własnej domeny do serwera jest zupełnie darmowa usługa CloudFlare.
+CO TO JEST CLOUDFLARE? To serwis, który umożliwia cachowanie statycznego contentu na Twojej stronie (pliki graficzne, JS, CSS itp), a w konsekwencji przyspieszenie działania strony, ale oferuje on także usługę tunelującą połączenia IPv4 na adresy IPv6 i to dla mikrusowców jest super ważne :)
+PO CO MI CLOUDFLARE? Adresacja IPv6 działa tylko u ludzi, których dostawca internetu oferuje obsługę adresów IPv6, a to niestety nie jest naszym kraju częste.">
+<meta name="author" content="">
+<link rel="canonical" href="https://mikrus.wkro.pl/podpiecie_domeny_przez_cloudflare/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://mikrus.wkro.pl/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mikrus.wkro.pl/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mikrus.wkro.pl/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mikrus.wkro.pl/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mikrus.wkro.pl/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="Podpięcie domeny przez CloudFlare Najprostszym sposobem na podpięcie własnej domeny do serwera jest zupełnie darmowa usługa CloudFlare.
+CO TO JEST CLOUDFLARE? To serwis, który umożliwia cachowanie statycznego contentu na Twojej stronie (pliki graficzne, JS, CSS itp), a w konsekwencji przyspieszenie działania strony, ale oferuje on także usługę tunelującą połączenia IPv4 na adresy IPv6 i to dla mikrusowców jest super ważne :)
+PO CO MI CLOUDFLARE? Adresacja IPv6 działa tylko u ludzi, których dostawca internetu oferuje obsługę adresów IPv6, a to niestety nie jest naszym kraju częste." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mikrus.wkro.pl/podpiecie_domeny_przez_cloudflare/" /><meta property="article:section" content="" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Podpięcie domeny przez CloudFlare Najprostszym sposobem na podpięcie własnej domeny do serwera jest zupełnie darmowa usługa CloudFlare.
+CO TO JEST CLOUDFLARE? To serwis, który umożliwia cachowanie statycznego contentu na Twojej stronie (pliki graficzne, JS, CSS itp), a w konsekwencji przyspieszenie działania strony, ale oferuje on także usługę tunelującą połączenia IPv4 na adresy IPv6 i to dla mikrusowców jest super ważne :)
+PO CO MI CLOUDFLARE? Adresacja IPv6 działa tylko u ludzi, których dostawca internetu oferuje obsługę adresów IPv6, a to niestety nie jest naszym kraju częste."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "",
+      "item": "https://mikrus.wkro.pl/podpiecie_domeny_przez_cloudflare/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Podpięcie domeny przez CloudFlare Najprostszym sposobem na podpięcie własnej domeny do serwera jest zupełnie darmowa usługa CloudFlare.\nCO TO JEST CLOUDFLARE? To serwis, który umożliwia cachowanie statycznego contentu na Twojej stronie (pliki graficzne, JS, CSS itp), a w konsekwencji przyspieszenie działania strony, ale oferuje on także usługę tunelującą połączenia IPv4 na adresy IPv6 i to dla mikrusowców jest super ważne :)\nPO CO MI CLOUDFLARE? Adresacja IPv6 działa tylko u ludzi, których dostawca internetu oferuje obsługę adresów IPv6, a to niestety nie jest naszym kraju częste.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Podpięcie domeny przez CloudFlare Najprostszym sposobem na podpięcie własnej domeny do serwera jest zupełnie darmowa usługa CloudFlare.\nCO TO JEST CLOUDFLARE? To serwis, który umożliwia cachowanie statycznego contentu na Twojej stronie (pliki graficzne, JS, CSS itp), a w konsekwencji przyspieszenie działania strony, ale oferuje on także usługę tunelującą połączenia IPv4 na adresy IPv6 i to dla mikrusowców jest super ważne :)\nPO CO MI CLOUDFLARE? Adresacja IPv6 działa tylko u ludzi, których dostawca internetu oferuje obsługę adresów IPv6, a to niestety nie jest naszym kraju częste. Z tego powodu, Twoja strona postawiona na Mikrusie z własną domeną może u Ciebie działać poprawnie, a u Twojego kolegi nie będzie działać wcale.\nAby temu zaradzić, warto zaopatrzyć się w tunel IPv4 → IPv6, a taki oferuje CloudFlare.\nOD CZEGO ZACZĄĆ? Potrzebujesz mieć swoją domenę. Musisz ją kupić.\nNastępnie zakładasz konto na stronie https://cloudflare.com i dodajesz tam wspomnianą domenę.\nCloudflare poprosi Cię o zmianę serwerów DNS. Zrobisz to u swojego sprzedawcy domen (czyli jeśli np. domenę kupiłeś w OVH, to zaloguj się do panelu OVH i tam szukaj “zmiana DNS”).\nJAK PODPIĄĆ CLOUDFLARE DO MIKRUSA? Na wstępie potrzebujesz znać swój adres IPv6. Jest on przeważnie wyświetlany tuż po połączeniu się z Mikrusem, ale jeśli go nie widzisz, możesz wydać polecenie:\nip -6 a s\nlub\nifconfig\nNastępnie musisz wykonać następujące kroki:\nzaloguj się do Cloudflare i kliknij nazwę swojej domeny przejdź do zakładki DNS kliknij “Add record” Ustaw kolejno: Type = AAAA Name = @ IPv6 = tutaj wklej swój adres TTL = zostaw jak jest chmurka = ma być ŻÓŁTA! Kliknij Save Na zakładce “SSL/TLS” ustaw tryb Flexible Gotowe STRONA MI NIE DZIAŁA! upewnij się, że tryb “SSL/TLS” jest ustawiony na Flexible (możesz korzystać oczywiście z FULL lub STRICT, ale ten poradnik nie podpowie Ci jak to ustawić) sprawdź, czy Twój serwer WWW nasłuchuje na porcie 80 na adresacji IPv6 (nie IPv4!). Pomoże Ci w tym polecenie: netstat -plnt upewnij się, że w zakładce “DNS” nie masz dodanych żadnych wpisów typu “A” dla głównej domeny (czasami same się dodają przy imporcie domeny) sprawdź, czy przy rekordach AAAA są widoczne żółte chmurki Powrót do strony głównej\n",
+  "wordCount" : "353",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mikrus.wkro.pl/podpiecie_domeny_przez_cloudflare/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mikrus - Don't Panic!",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://mikrus.wkro.pl/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://mikrus.wkro.pl/" accesskey="h" title="Mikrus - Don&#39;t Panic! (Alt + H)">Mikrus - Don&#39;t Panic!</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="podpięcie-domeny-przez-cloudflare">Podpięcie domeny przez CloudFlare<a hidden class="anchor" aria-hidden="true" href="#podpięcie-domeny-przez-cloudflare">#</a></h1>
+<p>Najprostszym sposobem na podpięcie <strong>własnej domeny</strong> do serwera jest zupełnie darmowa usługa CloudFlare.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="co-to-jest-cloudflare"><strong>CO TO JEST CLOUDFLARE?</strong><a hidden class="anchor" aria-hidden="true" href="#co-to-jest-cloudflare">#</a></h3>
+<p>To serwis, który umożliwia cachowanie statycznego contentu na Twojej stronie (pliki graficzne, JS, CSS itp), a w konsekwencji przyspieszenie działania strony, ale oferuje on także usługę tunelującą połączenia IPv4 na adresy IPv6 i to dla mikrusowców jest super ważne :)</p>
+<h3 id="po-co-mi-cloudflare"><strong>PO CO MI CLOUDFLARE?</strong><a hidden class="anchor" aria-hidden="true" href="#po-co-mi-cloudflare">#</a></h3>
+<p>Adresacja IPv6 działa tylko u ludzi, których dostawca internetu oferuje obsługę adresów IPv6, a to niestety nie jest naszym kraju częste. Z tego powodu, Twoja strona postawiona na Mikrusie z własną domeną może u Ciebie działać poprawnie, a u Twojego kolegi nie będzie działać wcale.</p>
+<p>Aby temu zaradzić, warto zaopatrzyć się w tunel IPv4 → IPv6, a taki oferuje CloudFlare.</p>
+<h3 id="od-czego-zacząć"><strong>OD CZEGO ZACZĄĆ?</strong><a hidden class="anchor" aria-hidden="true" href="#od-czego-zacząć">#</a></h3>
+<p>Potrzebujesz mieć swoją domenę. Musisz ją kupić.</p>
+<p>Następnie zakładasz konto na stronie <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fcloudflare.com%2F%3Ffbclid%3DIwAR2x2YDfDUV7FcWXe8lFuFZipMAegxq78ZNpprNA20HqrFbPHwdNw6hQNMM&amp;h=AT2g_kf0GT21nLh6bqdsJIgxs4N6CPiAQkzx80M8M5bEmPTvUw2M6EeIlFyCvEdI-dst0brD8eMTdbBeXSeMiec_jsViaOuUAi7pecH7cqQ9pfLc6apFU6PFAsdTvPVA_tSV1hg&amp;__tn__=-UK-R&amp;c%5B0%5D=AT06JheNOX0eVY37QOFJPdPRc28jZz-Qx0NMt11qnQ8H7ccrvkXc6Bz7CR7Q1PKzIfrGGOi6XycZq8CElhwT16HrYqg8H-oWvmWkcu9zBHfhX5ADqY7Kk3DjTX9gXKXRP3gT4da-23bXp7dtQ4rTOwTNdalfWB5Sz_g">https://cloudflare.com</a> i dodajesz tam wspomnianą domenę.</p>
+<p>Cloudflare poprosi Cię o zmianę serwerów DNS. Zrobisz to u swojego sprzedawcy domen (czyli jeśli np. domenę kupiłeś w OVH, to zaloguj się do panelu OVH i tam szukaj &ldquo;zmiana DNS&rdquo;).</p>
+<h3 id="jak-podpiąć-cloudflare-do-mikrusa"><strong>JAK PODPIĄĆ CLOUDFLARE DO MIKRUSA?</strong><a hidden class="anchor" aria-hidden="true" href="#jak-podpiąć-cloudflare-do-mikrusa">#</a></h3>
+<p>Na wstępie potrzebujesz znać swój adres IPv6. Jest on przeważnie wyświetlany tuż po połączeniu się z Mikrusem, ale jeśli go nie widzisz, możesz wydać polecenie:</p>
+<blockquote>
+<p>ip -6 a s</p>
+</blockquote>
+<p>lub</p>
+<blockquote>
+<p>ifconfig</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Następnie musisz wykonać następujące kroki:</p>
+<ul>
+<li>zaloguj się do Cloudflare i kliknij nazwę swojej domeny</li>
+<li>przejdź do zakładki DNS</li>
+<li>kliknij &ldquo;Add record&rdquo;</li>
+<li>Ustaw kolejno:
+<strong>Type</strong> = AAAA
+<strong>Name</strong> = @
+<strong>IPv6</strong> = tutaj wklej swój adres
+<strong>TTL</strong> = zostaw jak jest
+<strong>chmurka</strong> = ma być ŻÓŁTA!</li>
+<li>Kliknij Save</li>
+<li>Na zakładce &ldquo;<strong>SSL/TLS</strong>&rdquo; ustaw tryb <strong>Flexible</strong></li>
+<li>Gotowe</li>
+</ul>
+<h3 id="strona-mi-nie-działa"><strong>STRONA MI NIE DZIAŁA!</strong><a hidden class="anchor" aria-hidden="true" href="#strona-mi-nie-działa">#</a></h3>
+<ul>
+<li>upewnij się, że tryb &ldquo;SSL/TLS&rdquo; jest ustawiony na Flexible (możesz korzystać oczywiście z FULL lub STRICT, ale ten poradnik nie podpowie Ci jak to ustawić)</li>
+<li>sprawdź, czy Twój serwer WWW nasłuchuje na porcie 80 na adresacji IPv6 (nie IPv4!).
+Pomoże Ci w tym polecenie:
+<em><strong>netstat -plnt</strong></em></li>
+<li>upewnij się, że w zakładce &ldquo;DNS&rdquo; nie masz dodanych żadnych wpisów typu &ldquo;A&rdquo; dla głównej domeny (czasami same się dodają przy imporcie domeny)</li>
+<li>sprawdź, czy przy rekordach AAAA są widoczne żółte chmurki</li>
+</ul>
+<p><a href="../MIKR%20US%20-%20Don't%20Panic!%2072ab7e2ae85342d2a0a0c9443d521166.md">Powrót do strony głównej</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://mikrus.wkro.pl/">Mikrus - Don&#39;t Panic!</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

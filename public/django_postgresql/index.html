@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Mikrus - Don&#39;t Panic!</title>
+<meta name="keywords" content="">
+<meta name="description" content="Django &#43; PostgreSQL Autorem artykułu jest Seweryn Jagusiak
+W tym artykule opiszę jak postawić aplikację Django (nie wykorzystując w tym celu Dockera), której możemy używać w wersji produkcyjnej na pojedynczym Mikrusie (nawet w wersji 1.0), używając dystrybucji Ubuntu.
+Współdzielony PostgreSQL Przed zmianami, uzyskajmy dostęp do współdzielonego serwera PostgreSQL.
+Pod linkiem https://mikr.us/panel/?a=postgres możesz poprosić o dane dostępowe do współdzielonej bazy danych.
+W panelu głównym (https://mikr.us/panel/) po kliknięciu w logi bazy powinniśmy otrzymać dane dostępowe w następującym formacie:">
+<meta name="author" content="">
+<link rel="canonical" href="https://mikrus.wkro.pl/django_postgresql/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://mikrus.wkro.pl/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mikrus.wkro.pl/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mikrus.wkro.pl/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mikrus.wkro.pl/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mikrus.wkro.pl/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="Django &#43; PostgreSQL Autorem artykułu jest Seweryn Jagusiak
+W tym artykule opiszę jak postawić aplikację Django (nie wykorzystując w tym celu Dockera), której możemy używać w wersji produkcyjnej na pojedynczym Mikrusie (nawet w wersji 1.0), używając dystrybucji Ubuntu.
+Współdzielony PostgreSQL Przed zmianami, uzyskajmy dostęp do współdzielonego serwera PostgreSQL.
+Pod linkiem https://mikr.us/panel/?a=postgres możesz poprosić o dane dostępowe do współdzielonej bazy danych.
+W panelu głównym (https://mikr.us/panel/) po kliknięciu w logi bazy powinniśmy otrzymać dane dostępowe w następującym formacie:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mikrus.wkro.pl/django_postgresql/" /><meta property="article:section" content="" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Django &#43; PostgreSQL Autorem artykułu jest Seweryn Jagusiak
+W tym artykule opiszę jak postawić aplikację Django (nie wykorzystując w tym celu Dockera), której możemy używać w wersji produkcyjnej na pojedynczym Mikrusie (nawet w wersji 1.0), używając dystrybucji Ubuntu.
+Współdzielony PostgreSQL Przed zmianami, uzyskajmy dostęp do współdzielonego serwera PostgreSQL.
+Pod linkiem https://mikr.us/panel/?a=postgres możesz poprosić o dane dostępowe do współdzielonej bazy danych.
+W panelu głównym (https://mikr.us/panel/) po kliknięciu w logi bazy powinniśmy otrzymać dane dostępowe w następującym formacie:"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "",
+      "item": "https://mikrus.wkro.pl/django_postgresql/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Django + PostgreSQL Autorem artykułu jest Seweryn Jagusiak\nW tym artykule opiszę jak postawić aplikację Django (nie wykorzystując w tym celu Dockera), której możemy używać w wersji produkcyjnej na pojedynczym Mikrusie (nawet w wersji 1.0), używając dystrybucji Ubuntu.\nWspółdzielony PostgreSQL Przed zmianami, uzyskajmy dostęp do współdzielonego serwera PostgreSQL.\nPod linkiem https://mikr.us/panel/?a=postgres możesz poprosić o dane dostępowe do współdzielonej bazy danych.\nW panelu głównym (https://mikr.us/panel/) po kliknięciu w logi bazy powinniśmy otrzymać dane dostępowe w następującym formacie:",
+  "keywords": [
+    
+  ],
+  "articleBody": "Django + PostgreSQL Autorem artykułu jest Seweryn Jagusiak\nW tym artykule opiszę jak postawić aplikację Django (nie wykorzystując w tym celu Dockera), której możemy używać w wersji produkcyjnej na pojedynczym Mikrusie (nawet w wersji 1.0), używając dystrybucji Ubuntu.\nWspółdzielony PostgreSQL Przed zmianami, uzyskajmy dostęp do współdzielonego serwera PostgreSQL.\nPod linkiem https://mikr.us/panel/?a=postgres możesz poprosić o dane dostępowe do współdzielonej bazy danych.\nW panelu głównym (https://mikr.us/panel/) po kliknięciu w logi bazy powinniśmy otrzymać dane dostępowe w następującym formacie:\nServer: postgres_server login: postgres_login Haslo: postgres_password Baza: postgres_db Nowy użytkownik Zaloguj się MIKRUSie i stwórz nowego użytkownika pod aplikację (zakładam, że jesteś rootem, jeśli nie, poprzedź komendę słowem sudo), używając komendy:\nuseradd -m django (opcja -m utworzy katalog domowy dla tego użytkownika)\nDodajmy możliwość wykonania polecenia root’a przez użytkownika django.\nusermod -aG sudo django oraz wyłączmy potrzebę podawania hasła (przy używaniu sudo przez użytkownika django) - w tym celu należy uruchomić komendę, która włączy edycję pliku.\nvisudo Dodaj następujący wpis do otworzonego pliku i zapisz:\ndjango ALL=(ALL) NOPASSWD:ALL Przeloguj się na użytkownika django (jeśli nie jesteś rootem, użyj słowo sudo przed)\nsu - django -s /bin/bash Kolejne kroki bedą odbywały się w kontekście zalogowanego użytkownika django.\nInstalacja bibliotek pythona i wirtualnego środowiska Na początek zaktualizujemy informacje o pakietach:\nsudo apt update i instalujemy potrzebne bilioteki\nsudo apt -y install python3-pip python3-dev libpq-dev (dodałem opcję -y, dzięki niej system nie zapyta, czy chcemy zainstalować wybrane pakiety, opcja często użwana w skyptach)\nZainstalujmy moduł, który umożliwia tworzenie środowiska wirtualnego dla python’a.\nsudo pip3 install virtualenv Przejdźmy do katalogu domowego, używając komendy (domyślnie użytkownik powinien znaleźć się w tym katalogu):\ncd Utwórzmy środowisko wirtualne (o nazwie py3-env) używając następującej komendy.\nvirtualenv py3-env i aktywujmy je komendą:\nsource py3-env/bin/activate (w obecnej sesji używane jest wirtualne środowisko Pythona, jest one odrębne od systemowego, stąd zainstalowane biblioteki Pythonowe nie pojawią się na poziomie systemowych. Aby opuścić środowisko wirtualne, należy użyć komendy deactivate — ale nie rób tego teraz)\nNa koniec sekcji, zainstalujmy potrzebne później biblioteki Pythona:\npip install django psycopg2 gunicorn (zainstalowaliśmy Django, bibliotekę do łączenia z postgresem oraz gunicorn’a)\nUruchomienie Django Tworzymy aplikacje django o nazwie myapp (możesz zmienić nazwę, pamiętaj o aktualizacji nazwy w kolejnych komendach i edycjach plików)\ndjango-admin startproject myapp Dokonajmy edycji ustawień aplikacji poprzez:\nnano myapp/myapp/settings.py (użyłem edytora nano, ponieważ jest prosty w użyciu, możesz użyć innego)\nZaktualizujmy hosty dostępowe na początek:\nALLOWED_HOSTS = ['127.0.0.1', 'twojadomena.pl'] CSRF_TRUSTED_ORIGINS = ['http://0.0.0.0:8000', 'https://twojadomena.pl'] (jeśli aplikacja ma być dostępna publicznie pod domeną, dodaj odpowiedni wpis, dla przykładu dodałem twojadomena.pl)\nUzupełnijmy konfigurację o dostępy do bazy w następujący sposób (wykorzystując dane z sekcji Współdzielony PostgreSQL, zamień wszystkie wartości rozpoczynające się od postgres_ na te z logów w panelu zarządzania):\nDATABASES = { 'default': { 'ENGINE': 'django.db.backends.postgresql_psycopg2', 'NAME': 'postgres_db', 'USER': 'postgres_login', 'PASSWORD': 'postgres_password', 'HOST': 'postgres_server', 'PORT': '5432', } } Dodajemy główną ścieżkę do tworzenia plików statycznych (tak, aby znalazła się w katalogu aplikacji myapp):\nimport os STATIC_ROOT = os.path.join(BASE_DIR, 'static/') Po tym wszystkim zapiszmy plik. (Warto jeszcze zwrócić uwagę na bezpieczeństwo aplikacji: jeśli wystawimy ją publicznie, parametr DEBUG w pliku powinien zostać przestawiony na False, dodatkowo, warto umieścić wrażliwe wartości, jak hasło do bazy poza plikiem, używając do tego np. modułu djangowego o nazwie environ https://django-environ.readthedocs.io/en/latest/ — dla początkujących proponuję na razie jednak ominąć tę akcję i wrócić po wykonaniu całości).\nZobacz w sekcji Uwagi, ****z czym się wiąże przestawienie parametru DEBUG.\nNastępnie migrujemy bazę danych następującymi komendami:\npython ~/myapp/manage.py makemigrations python ~/myapp/manage.py migrate (należy pamiętać, aby wirtualne środowisko było aktywne)\nKolejnym krokiem jest wygenerowanie statycznych plików komendą:\npython ~/myapp/manage.py collectstatic Ostatnim krokiem jest utworzenie admina w aplikacji (tutaj pełna dowolność po stronie tworzącego - wybory nie wpływają na dalsze części instrukcji — w ostateczności można pominąć ten krok i dodać admina później). Robimy to następują komendą:\npython ~/myapp/manage.py createsuperuser Zostaniemy poproszeni kolejno o nazwę użytkownika (pominięcie utworzy użytkownika o nazwie django), email (można pominąć i zostawić puste) oraz hasła i jego powtórzenia.\nOstatnim krokiem jest uruchomienie aplikacji za pomocą komendy:\npython ~/myapp/manage.py runserver 0.0.0.0:8000 Powinniśmy zobaczyć coś takiego:\nSystem check identified no issues (0 silenced). Django version X.X.X, using settings ‘myapp.settings’ Starting development server at http://0.0.0.0:8000/ Quit the server with CONTROL-C.\nJeśli mamy połączenie z MIKRUSem poprzez VPN albo tunel, to wchodząc na url http://0.0.0.0:8000/ powinniśmy zobaczyć działającą aplikację (tutaj nie będę opisywał jak to zrobić).\nJednak uruchamianie aplikacje w ten sposób jest uciążliwe, w następnych krokach uruchomimy ją jako usługę systemu (systemmd) i użyjemy nginxa oraz gunicorna, aby efektywnie serwować aplikację z użyciem protokołu HTTP. Dlatego za pomocą Control + C, kończymy działanie domyślnego serwera i przechodzimy do kolejnych kroków.\nKonfiguracja serwisu Od tego momentu nie trzeba już być w wirtualnym środowisku python, można je zdezaktywować (komenda deactivate).\nAby opakować działanie naszej aplikacji, jako serwis w systemie stwórzmy następujący plik:\nsudo nano /etc/systemd/system/gunicorn.service Jego treść powinna być następująca:\n[Unit] Description=gunicorn daemon After=network.target [Service] User=django Group=www-data WorkingDirectory=/home/django/myapp ExecStart=/home/django/py3-env/bin/gunicorn --access-logfile - --workers 2 --bind unix:/home/django/myapp/myapp.sock myapp.wsgi:application [Install] WantedBy=multi-user.target Zapisujemy plik i uruchamiamy usługę komendami:\nsudo systemctl start gunicorn sudo systemctl enable gunicorn Aby sprawdzić stan usługi, możemy użyć komendy:\nsudo systemctl status gunicorn Jeśli pojawią się/pojawiły się błędy w usłudze, podejrzymy je za pomocą komendy:\nsudo journalctl -u gunicorn Jeśli zmienimy coś w kodzie aplikacji i chcemy aby zmiany pojawiły się na serwerze, uruchamiamy komendę restartującą usługę:\nsudo systemctl restart gunicorn Nginx i proxy Ostatnia cześć, tutaj podłączymy nginxowe proxy pod gunicorna (pozbędziemy się oznaczenia portu 8000 z url’a).\nNa początek zainstalujmy nginx’a:\nsudo apt -y install nginx Następnie dodajmy plik o nazwie myapp do konfiguracji nginx’a:\nsudo nano /etc/nginx/sites-available/myapp i dodajmy następującą treść:\nserver { listen [::]:80; server_name twojadomena.pl; location = /favicon.ico { access_log off; log_not_found off; } location /static/ { root /home/django/myapp; } location / { include proxy_params; proxy_pass http://unix:/home/django/myapp/myapp.sock; } } Zastąp twojadomena.pl adresem ip, jeśli chcesz, aby aplikacja działała lokalnie lub domeną, aby była dostępna publicznie. Jeśli chcesz, aby aplikacja działa pod twoją domeną, musisz ją przekierować na MIKRUSa (np. z użyciem CloudFlare: https://www.notion.so/Podpi-cie-domeny-przez-CloudFlare-2a04b845203a4d9b82fa1816c6962d8e).\nNa koniec, tworzymy link do stron udostępnionych (nginx sugeruje zarządzanie serwerami w taki sposób, aby rozdzielić wszystkie możliwe konfiguracje stron od tych rzeczywiście włączonych):\nsudo ln -s /etc/nginx/sites-available/myapp /etc/nginx/sites-enabled Aby sprawdzić poprawność konfiguracji, używamy komendy:\nsudo nginx -t Jeśli wszystko jest w porządku, przeładowujemy nginx’a.\nsudo systemctl restart nginx Teraz, można wejść na adres podany w konfiguracji nginxa (server name) i oczom powinna pokazać się bazowa aplikacja Django.\nAplikacja powinna działać nawet po restarcie MIKRUSa. Na koniec możemy wylogować się z użytkownika (komenda exit)\nUwagi Jeśli od razu przestawisz ustawienie DEBUG na False, to po wpisaniu URLa (składającego się z samej domeny) nie zobaczysz żadnej strony, ponieważ takowej nie dodano. Domyślnie DJANGO udostępnia panel admina, wiec swoją konfigurację możesz sprawdzić pod adresem: twojadomena.pl/admin.\nNotatki Nie będę ukrywał, w większości opierałem się na instrukcji z: https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04 . Oryginał jest obszerniejszy, ale podana instrukcja jest dostosowana do środowiska Mikrusowego oraz posiada drobne poprawki.\nW podanym przykładzie uruchomiłem 2 workery obsługujące ruch HTTP, dla większego ruchu proponuję uruchomić więcej — ale nie wiem ile zniesie MIKRUS.\nPo wszystkim, dla bezpieczeństwa, można ograniczyć usunąć wpis umożliwiający na wykonywanie sudo bez hasła przez użytkownika django ( akcja przy komendzie sudo visudo), restart nginx można dokonywać z poziomu roota lub innego użytkownika z uprawnieniami.\n",
+  "wordCount" : "1185",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mikrus.wkro.pl/django_postgresql/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mikrus - Don't Panic!",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://mikrus.wkro.pl/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://mikrus.wkro.pl/" accesskey="h" title="Mikrus - Don&#39;t Panic! (Alt + H)">Mikrus - Don&#39;t Panic!</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="django--postgresql">Django + PostgreSQL<a hidden class="anchor" aria-hidden="true" href="#django--postgresql">#</a></h1>
+<p>Autorem artykułu jest Seweryn Jagusiak</p>
+<p>W tym artykule opiszę jak postawić aplikację Django (nie wykorzystując w tym celu Dockera), której możemy używać w wersji produkcyjnej na pojedynczym Mikrusie (nawet w wersji 1.0), używając dystrybucji Ubuntu.</p>
+<h3 id="współdzielony-postgresql">Współdzielony PostgreSQL<a hidden class="anchor" aria-hidden="true" href="#współdzielony-postgresql">#</a></h3>
+<p>Przed zmianami, uzyskajmy dostęp do współdzielonego serwera PostgreSQL.</p>
+<p>Pod linkiem <a href="https://mikr.us/panel/?a=postgres">https://mikr.us/panel/?a=postgres</a> możesz poprosić o dane dostępowe do współdzielonej bazy danych.</p>
+<p>W panelu głównym (<a href="https://mikr.us/panel/">https://mikr.us/panel/</a>) po kliknięciu w logi bazy powinniśmy otrzymać dane dostępowe w następującym formacie:</p>
+<pre tabindex="0"><code>Server: postgres_server
+login: postgres_login
+Haslo: postgres_password
+Baza: postgres_db
+</code></pre><h3 id="nowy-użytkownik">Nowy użytkownik<a hidden class="anchor" aria-hidden="true" href="#nowy-użytkownik">#</a></h3>
+<p>Zaloguj się MIKRUSie i stwórz nowego użytkownika pod aplikację (zakładam, że jesteś rootem, jeśli nie, poprzedź komendę słowem <strong>sudo</strong>), używając komendy:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>useradd -m django
+</span></span></code></pre></div><p>(opcja <strong>-m</strong>  utworzy katalog domowy dla tego użytkownika)</p>
+<p>Dodajmy możliwość wykonania polecenia root&rsquo;a przez użytkownika <strong>django</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>usermod -aG sudo django
+</span></span></code></pre></div><p>oraz wyłączmy potrzebę podawania hasła (przy używaniu sudo przez użytkownika <strong>django</strong>)  - w tym celu należy uruchomić komendę, która włączy edycję pliku.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>visudo
+</span></span></code></pre></div><p>Dodaj następujący wpis do otworzonego pliku i zapisz:</p>
+<pre tabindex="0"><code>django     ALL=(ALL) NOPASSWD:ALL
+</code></pre><p>Przeloguj się na użytkownika <strong>django</strong> (jeśli nie jesteś rootem, użyj słowo <strong>sudo</strong> przed)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>su - django -s /bin/bash
+</span></span></code></pre></div><p>Kolejne kroki bedą odbywały się w kontekście zalogowanego użytkownika <strong>django</strong>.</p>
+<h3 id="instalacja-bibliotek-pythona-i-wirtualnego-środowiska">Instalacja bibliotek pythona i wirtualnego środowiska<a hidden class="anchor" aria-hidden="true" href="#instalacja-bibliotek-pythona-i-wirtualnego-środowiska">#</a></h3>
+<p>Na początek zaktualizujemy informacje o pakietach:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span></code></pre></div><p>i instalujemy potrzebne bilioteki</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt -y install python3-pip python3-dev libpq-dev
+</span></span></code></pre></div><p>(dodałem opcję <strong>-y</strong>, dzięki niej system nie zapyta, czy chcemy zainstalować wybrane pakiety, opcja często użwana w skyptach)</p>
+<p>Zainstalujmy moduł, który umożliwia tworzenie środowiska wirtualnego dla python&rsquo;a.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pip3 install virtualenv
+</span></span></code></pre></div><p>Przejdźmy do katalogu domowego, używając komendy (domyślnie użytkownik powinien znaleźć się w tym katalogu):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd
+</span></span></code></pre></div><p>Utwórzmy środowisko wirtualne (o nazwie py3-env) używając następującej komendy.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>virtualenv py3-env
+</span></span></code></pre></div><p>i aktywujmy je komendą:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>source py3-env/bin/activate
+</span></span></code></pre></div><p>(w obecnej sesji używane jest wirtualne środowisko Pythona, jest one odrębne od systemowego, stąd zainstalowane biblioteki Pythonowe nie pojawią się na poziomie systemowych. Aby opuścić środowisko wirtualne, należy użyć komendy <strong>deactivate</strong> — ale nie rób tego teraz)</p>
+<p>Na koniec sekcji, zainstalujmy potrzebne później biblioteki Pythona:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install django psycopg2 gunicorn
+</span></span></code></pre></div><p>(zainstalowaliśmy Django, bibliotekę do łączenia z postgresem oraz gunicorn&rsquo;a)</p>
+<h3 id="uruchomienie-django">Uruchomienie Django<a hidden class="anchor" aria-hidden="true" href="#uruchomienie-django">#</a></h3>
+<p>Tworzymy aplikacje django o nazwie <strong>myapp</strong> (możesz zmienić nazwę, pamiętaj o aktualizacji nazwy w kolejnych komendach i edycjach plików)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>django-admin startproject myapp
+</span></span></code></pre></div><p>Dokonajmy edycji ustawień aplikacji poprzez:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano myapp/myapp/settings.py
+</span></span></code></pre></div><p>(użyłem edytora <strong>nano</strong>, ponieważ jest prosty w użyciu, możesz użyć innego)</p>
+<p>Zaktualizujmy hosty dostępowe na początek:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ALLOWED_HOSTS <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>, <span style="color:#e6db74">&#39;twojadomena.pl&#39;</span>]
+</span></span><span style="display:flex;"><span>CSRF_TRUSTED_ORIGINS <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;http://0.0.0.0:8000&#39;</span>, <span style="color:#e6db74">&#39;https://twojadomena.pl&#39;</span>]
+</span></span></code></pre></div><p>(jeśli aplikacja ma być dostępna publicznie pod domeną, dodaj odpowiedni wpis, dla przykładu  dodałem <strong>twojadomena.pl</strong>)</p>
+<p>Uzupełnijmy konfigurację o dostępy do bazy w następujący sposób (wykorzystując dane z sekcji <strong>Współdzielony PostgreSQL,</strong> zamień wszystkie wartości rozpoczynające się od <strong>postgres_</strong> na te z logów w panelu zarządzania):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>DATABASES <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;default&#39;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;ENGINE&#39;</span>: <span style="color:#e6db74">&#39;django.db.backends.postgresql_psycopg2&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;NAME&#39;</span>: <span style="color:#e6db74">&#39;postgres_db&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;USER&#39;</span>: <span style="color:#e6db74">&#39;postgres_login&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;PASSWORD&#39;</span>: <span style="color:#e6db74">&#39;postgres_password&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;HOST&#39;</span>: <span style="color:#e6db74">&#39;postgres_server&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;PORT&#39;</span>: <span style="color:#e6db74">&#39;5432&#39;</span>,
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Dodajemy główną ścieżkę do tworzenia plików statycznych (tak, aby znalazła się w katalogu aplikacji <strong>myapp</strong>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span>STATIC_ROOT <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(BASE_DIR, <span style="color:#e6db74">&#39;static/&#39;</span>)
+</span></span></code></pre></div><p>Po tym wszystkim zapiszmy plik. (Warto jeszcze zwrócić uwagę na bezpieczeństwo aplikacji: jeśli wystawimy ją publicznie, parametr <strong>DEBUG</strong> w pliku powinien zostać przestawiony na False, dodatkowo, warto umieścić wrażliwe wartości, jak hasło do bazy poza plikiem, używając do tego np. modułu djangowego o nazwie environ <a href="https://django-environ.readthedocs.io/en/latest/">https://django-environ.readthedocs.io/en/latest/</a> — dla początkujących proponuję na razie jednak ominąć tę akcję i wrócić po wykonaniu całości).</p>
+<p>Zobacz w sekcji <strong>Uwagi</strong>, ****z czym się wiąże przestawienie parametru <strong>DEBUG</strong>.</p>
+<p>Następnie migrujemy bazę danych następującymi komendami:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python ~/myapp/manage.py makemigrations
+</span></span><span style="display:flex;"><span>python ~/myapp/manage.py migrate
+</span></span></code></pre></div><p>(należy pamiętać, aby wirtualne środowisko było aktywne)</p>
+<p>Kolejnym krokiem jest wygenerowanie statycznych plików komendą:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python ~/myapp/manage.py collectstatic
+</span></span></code></pre></div><p>Ostatnim krokiem jest utworzenie admina w aplikacji (tutaj pełna dowolność po stronie tworzącego - wybory nie wpływają na dalsze części instrukcji — w ostateczności można pominąć ten krok i dodać admina później). Robimy to następują komendą:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python ~/myapp/manage.py createsuperuser
+</span></span></code></pre></div><p>Zostaniemy poproszeni kolejno o nazwę użytkownika (pominięcie utworzy użytkownika o nazwie <strong>django</strong>), email (można pominąć i zostawić puste) oraz hasła i jego powtórzenia.</p>
+<p>Ostatnim krokiem jest uruchomienie aplikacji za pomocą komendy:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python ~/myapp/manage.py runserver 0.0.0.0:8000
+</span></span></code></pre></div><p>Powinniśmy zobaczyć coś takiego:</p>
+<p>System check identified no issues (0 silenced).
+Django version <em>X.X.X</em>, using settings &lsquo;myapp.settings&rsquo;
+Starting development server at <a href="http://0.0.0.0:8000/">http://0.0.0.0:8000/</a>
+Quit the server with CONTROL-C.</p>
+<p>Jeśli mamy połączenie z MIKRUSem poprzez VPN albo tunel, to wchodząc na url <a href="http://0.0.0.0:8000/">http://0.0.0.0:8000/</a> powinniśmy zobaczyć działającą aplikację (tutaj nie będę opisywał jak to zrobić).</p>
+<p>Jednak uruchamianie aplikacje w ten sposób jest uciążliwe, w następnych krokach uruchomimy ją jako usługę systemu (systemmd) i użyjemy nginxa oraz gunicorna, aby efektywnie serwować aplikację z użyciem protokołu HTTP. Dlatego za pomocą Control + C, kończymy działanie domyślnego serwera i przechodzimy do kolejnych kroków.</p>
+<h3 id="konfiguracja-serwisu">Konfiguracja serwisu<a hidden class="anchor" aria-hidden="true" href="#konfiguracja-serwisu">#</a></h3>
+<p>Od tego momentu nie trzeba już być w wirtualnym środowisku python, można je zdezaktywować (komenda <strong>deactivate</strong>).</p>
+<p>Aby opakować działanie naszej aplikacji, jako serwis w systemie  stwórzmy następujący plik:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/systemd/system/gunicorn.service
+</span></span></code></pre></div><p>Jego treść powinna być następująca:</p>
+<pre tabindex="0"><code>[Unit]
+Description=gunicorn daemon
+After=network.target
+
+[Service]
+User=django
+Group=www-data
+WorkingDirectory=/home/django/myapp
+ExecStart=/home/django/py3-env/bin/gunicorn --access-logfile - --workers 2 --bind unix:/home/django/myapp/myapp.sock myapp.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
+</code></pre><p>Zapisujemy plik i uruchamiamy usługę komendami:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl start gunicorn
+</span></span><span style="display:flex;"><span>sudo systemctl enable gunicorn
+</span></span></code></pre></div><p>Aby sprawdzić stan usługi, możemy użyć komendy:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl status gunicorn
+</span></span></code></pre></div><p>Jeśli pojawią się/pojawiły się błędy w usłudze, podejrzymy je za pomocą komendy:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo journalctl -u gunicorn
+</span></span></code></pre></div><p>Jeśli zmienimy coś w kodzie aplikacji i chcemy aby zmiany pojawiły się na serwerze, uruchamiamy komendę restartującą usługę:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart gunicorn
+</span></span></code></pre></div><h3 id="nginx-i-proxy">Nginx i proxy<a hidden class="anchor" aria-hidden="true" href="#nginx-i-proxy">#</a></h3>
+<p>Ostatnia cześć, tutaj podłączymy nginxowe proxy pod gunicorna (pozbędziemy się oznaczenia portu <strong>8000</strong> z url&rsquo;a).</p>
+<p>Na początek zainstalujmy nginx&rsquo;a:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt -y install nginx
+</span></span></code></pre></div><p>Następnie dodajmy plik o nazwie myapp do konfiguracji nginx&rsquo;a:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/nginx/sites-available/myapp
+</span></span></code></pre></div><p>i dodajmy następującą treść:</p>
+<pre tabindex="0"><code>server {
+    listen [::]:80;
+    server_name twojadomena.pl;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static/ {
+        root /home/django/myapp;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/django/myapp/myapp.sock;
+    }
+}
+</code></pre><p>Zastąp <a href="http://twojadomena.pl">twojadomena.pl</a> adresem ip, jeśli chcesz, aby aplikacja działała lokalnie lub domeną, aby była dostępna publicznie. Jeśli chcesz, aby aplikacja działa pod twoją domeną, musisz ją przekierować na MIKRUSa (np. z użyciem CloudFlare: <a href="Podpie%CC%A8cie%20domeny%20przez%20CloudFlare%2079b0c64f20044d79a33cbc59e8501a9f.md">https://www.notion.so/Podpi-cie-domeny-przez-CloudFlare-2a04b845203a4d9b82fa1816c6962d8e</a>).</p>
+<p>Na koniec, tworzymy link do stron udostępnionych (nginx sugeruje zarządzanie serwerami w taki sposób, aby rozdzielić wszystkie możliwe konfiguracje stron od tych rzeczywiście włączonych):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo ln -s /etc/nginx/sites-available/myapp /etc/nginx/sites-enabled
+</span></span></code></pre></div><p>Aby sprawdzić poprawność konfiguracji, używamy komendy:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nginx -t
+</span></span></code></pre></div><p>Jeśli wszystko jest w porządku, przeładowujemy nginx&rsquo;a.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart nginx
+</span></span></code></pre></div><p>Teraz, można wejść na adres podany w konfiguracji nginxa (server name) i oczom powinna pokazać się bazowa aplikacja Django.</p>
+<p>Aplikacja powinna działać nawet po restarcie MIKRUSa. Na koniec możemy wylogować się z użytkownika (komenda <strong>exit</strong>)</p>
+<h3 id="uwagi">Uwagi<a hidden class="anchor" aria-hidden="true" href="#uwagi">#</a></h3>
+<p>Jeśli od razu przestawisz ustawienie <strong>DEBUG</strong> na <strong>False</strong>, to po wpisaniu URLa (składającego się z samej domeny) nie zobaczysz żadnej strony, ponieważ takowej nie dodano. Domyślnie DJANGO udostępnia panel admina, wiec swoją konfigurację możesz sprawdzić pod adresem: twojadomena.pl/admin.</p>
+<h3 id="notatki">Notatki<a hidden class="anchor" aria-hidden="true" href="#notatki">#</a></h3>
+<p>Nie będę ukrywał, w większości opierałem się na instrukcji z: <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04">https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04</a> . Oryginał jest obszerniejszy, ale podana instrukcja jest dostosowana do środowiska Mikrusowego oraz posiada drobne poprawki.</p>
+<p>W podanym przykładzie uruchomiłem 2 workery obsługujące ruch HTTP, dla większego ruchu proponuję uruchomić więcej — ale nie wiem ile zniesie MIKRUS.</p>
+<p>Po wszystkim, dla bezpieczeństwa, można ograniczyć usunąć wpis umożliwiający na wykonywanie sudo bez hasła przez użytkownika <strong>django</strong> ( akcja przy komendzie <strong>sudo visudo</strong>), restart nginx można dokonywać z poziomu roota lub innego użytkownika z uprawnieniami.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://mikrus.wkro.pl/">Mikrus - Don&#39;t Panic!</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Biblioteka_Mikrusas on Mikrus - Don&#39;t Panic!</title>
+    <link>https://mikrus.wkro.pl/biblioteka_mikrusa/</link>
+    <description>Recent content in Biblioteka_Mikrusas on Mikrus - Don&#39;t Panic!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pl</language>
+    <atom:link href="https://mikrus.wkro.pl/biblioteka_mikrusa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/-index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/-index/</guid>
+      <description>Biblioteka Mikrusa Baza, którą właśnie czytasz, przeznaczona jest dla użytkowników serwerów MIKR.US i ma za zadanie dostarczyć im niezbędnej wiedzy potrzebnej do wzrastania w roli admina, DevOpsa, czy świadomego programisty.
+&amp;ldquo;Poziom zaawansowania&amp;rdquo; nie zawsze oznacza &amp;ldquo;poziom trudności tematu&amp;rdquo;, a jest subiektywnym stwierdzeniem, która grupa użytkowników potrzebuje danej wiedzy. Czasami temat jest prosty, ale wykracza poza zakres wiedzy potrzebny na start przygody z Linuksem.
+Baza wiedzy jest systematycznie uzupełniana o nowe znaleziska.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/backup-serwera-do-aws-s3-z-u%C5%BCyciem-restic-dcf6fa12927641be8b29b189b87ae68b/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/backup-serwera-do-aws-s3-z-u%C5%BCyciem-restic-dcf6fa12927641be8b29b189b87ae68b/</guid>
+      <description>Backup serwera do AWS S3 (z użyciem restic) Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/backup-z-u%C5%BCyciem-rclone-do-chmury-backblaze-b2-b2db11a61d354ffc9c0f2afd77bb2852/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/backup-z-u%C5%BCyciem-rclone-do-chmury-backblaze-b2-b2db11a61d354ffc9c0f2afd77bb2852/</guid>
+      <description>Backup z użyciem rclone do chmury Backblaze (B2) Tagi: narzędzia 🛠 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/cz%C4%99ste-b%C5%82%C4%99dy-przy-konfiguracji-nginx-stwarzaj%C4%85-47d8e9f9a739409aba1e7c5b3d6aa567/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/cz%C4%99ste-b%C5%82%C4%99dy-przy-konfiguracji-nginx-stwarzaj%C4%85-47d8e9f9a739409aba1e7c5b3d6aa567/</guid>
+      <description>Częste błędy przy konfiguracji nginx, stwarzające zagrożenia dla security Tagi: nginx 🚀 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/diango-posgresql-i-nginx-na-ubuntu-3e68105e35034a1f929aaac4d991460e/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/diango-posgresql-i-nginx-na-ubuntu-3e68105e35034a1f929aaac4d991460e/</guid>
+      <description>Diango, PosgreSQL i nginx na Ubuntu Tagi: pełen stack 🎛 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/dobre-praktyki-przy-pisaniu-docker-compose-1e56f26b68be472cacf6c42a4be7bcec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/dobre-praktyki-przy-pisaniu-docker-compose-1e56f26b68be472cacf6c42a4be7bcec/</guid>
+      <description>Dobre praktyki przy pisaniu docker-compose Tagi: kontenery 📦 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-bezpiecznie-obs%C5%82ugiwa%C4%87-pliki-katalogi-tymczas-0fc3ca4e29934bb5aac85899e08a5a56/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-bezpiecznie-obs%C5%82ugiwa%C4%87-pliki-katalogi-tymczas-0fc3ca4e29934bb5aac85899e08a5a56/</guid>
+      <description>Jak bezpiecznie obsługiwać pliki/katalogi tymczasowe w swoich skryptach? Tagi: wiedza 🤓 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-dzia%C5%82a-apache-kawka-wyja%C5%9Bnienie-na-poziomie-e16ae8dbcc52461c81fdbd515546c93f/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-dzia%C5%82a-apache-kawka-wyja%C5%9Bnienie-na-poziomie-e16ae8dbcc52461c81fdbd515546c93f/</guid>
+      <description>Jak działa Apache Kawka (wyjaśnienie na poziomie 5-letniego dziecka) Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-dzia%C5%82a-rozwi%C4%85zywanie-dnsa-w-systemie-linux-ccaeab9af7b04259af6b7a74fafe6c7e/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-dzia%C5%82a-rozwi%C4%85zywanie-dnsa-w-systemie-linux-ccaeab9af7b04259af6b7a74fafe6c7e/</guid>
+      <description>Jak działa rozwiązywanie DNSa w systemie Linux? Tagi: wiedza 🤓 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-dzia%C5%82a-sie%C4%87-routing-dns-dhcp-vpn-nat-itp-2f646fdbf50d4f7e871e12dc150784c6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-dzia%C5%82a-sie%C4%87-routing-dns-dhcp-vpn-nat-itp-2f646fdbf50d4f7e871e12dc150784c6/</guid>
+      <description>Jak działa sieć? (routing, DNS, DHCP, VPN, NAT itp) - artykuł ma 2 części Tagi: Linux 🐧 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-dzia%C5%82aj%C4%85-kontenery-i-czym-jest-overlayfs-e4e7f3cd57274cb4b0593e72b3bc4978/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-dzia%C5%82aj%C4%85-kontenery-i-czym-jest-overlayfs-e4e7f3cd57274cb4b0593e72b3bc4978/</guid>
+      <description>Jak działają kontenery i czym jest OverlayFS? Tagi: kontenery 📦 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-pisa%C4%87-jednolinijkowce-w-perlu-ce977b64c77d4ffb856163cf00999e8e/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-pisa%C4%87-jednolinijkowce-w-perlu-ce977b64c77d4ffb856163cf00999e8e/</guid>
+      <description>Jak pisać jednolinijkowce w PERLu Tagi: narzędzia 🛠 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-postawi%C4%87-wiele-aplikacji-na-jednym-serwerze-fdda48323aaa4c24b6e5c8149de2bd20/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-postawi%C4%87-wiele-aplikacji-na-jednym-serwerze-fdda48323aaa4c24b6e5c8149de2bd20/</guid>
+      <description>Jak postawić wiele aplikacji na jednym serwerze? (nginx+reverse proxy) Tagi: nginx 🚀 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-sprawi%C4%87-aby-zadania-z-crona-nie-nak%C5%82ada%C5%82y-si-dc2685e8a523448391eea34f795e5ce2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-sprawi%C4%87-aby-zadania-z-crona-nie-nak%C5%82ada%C5%82y-si-dc2685e8a523448391eea34f795e5ce2/</guid>
+      <description>Jak sprawić, aby zadania z crona nie nakładały się na siebie? Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-tworzy%C4%87-w%C5%82asne-pliki-makefile-3bace1f23ae94b6f83edd690d380e8e0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-tworzy%C4%87-w%C5%82asne-pliki-makefile-3bace1f23ae94b6f83edd690d380e8e0/</guid>
+      <description>Jak tworzyć własne pliki Makefile? Tagi: narzędzia 🛠 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-uruchomi%C4%87-sw%C3%B3j-program-skrypt-jako-us%C5%82ug%C4%99-s-a1823c4da5a14e079e3a1178d75a03bb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-uruchomi%C4%87-sw%C3%B3j-program-skrypt-jako-us%C5%82ug%C4%99-s-a1823c4da5a14e079e3a1178d75a03bb/</guid>
+      <description>Jak uruchomić swój program/skrypt jako usługę systemd? Tagi: Linux 🐧 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-u%C5%BCywa%C4%87-curla-2a8baeff2a7941bab8447cce6d73be64/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-u%C5%BCywa%C4%87-curla-2a8baeff2a7941bab8447cce6d73be64/</guid>
+      <description>Jak używać cURLa? Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-zdokeryzowa%C4%87-aplikacj%C4%99-pisan%C4%85-we-flasku-&#43;-m-760b4179f29b470198ec1f6db12eb375/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-zdokeryzowa%C4%87-aplikacj%C4%99-pisan%C4%85-we-flasku-&#43;-m-760b4179f29b470198ec1f6db12eb375/</guid>
+      <description>Jak zdokeryzować aplikację pisaną we FLASKu + MySQL? Tagi: kontenery 📦 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-zrobi%C4%87-multi-stage-build-na-dockerze-eba85cc7c1c449e9869dd084771ac694/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/jak-zrobi%C4%87-multi-stage-build-na-dockerze-eba85cc7c1c449e9869dd084771ac694/</guid>
+      <description>Jak zrobić multi-stage build na dockerze? Tagi: kontenery 📦 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/koncepcje-u%C5%BCywane-w-nginx-wprowadzenie-do-temat-0f0bee2ff98e4ffb92af0e9a1dc6f8aa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/koncepcje-u%C5%BCywane-w-nginx-wprowadzenie-do-temat-0f0bee2ff98e4ffb92af0e9a1dc6f8aa/</guid>
+      <description>Koncepcje używane w Nginx - wprowadzenie do tematu Tagi: nginx 🚀 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/konfiguracja-reverse-proxy-na-nginx-z-u%C5%BCyciem-doc-39d25f3067704486b6abae133ea31b26/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/konfiguracja-reverse-proxy-na-nginx-z-u%C5%BCyciem-doc-39d25f3067704486b6abae133ea31b26/</guid>
+      <description>Konfiguracja reverse proxy na Nginx z użyciem Dockera Tagi: kontenery 📦 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/lazydocker-narz%C4%99dzie-do-prostszego-zarz%C4%85dzania-2dd4a38412ec4e288988716d188f759b/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/lazydocker-narz%C4%99dzie-do-prostszego-zarz%C4%85dzania-2dd4a38412ec4e288988716d188f759b/</guid>
+      <description>LazyDocker - narzędzie do prostszego zarządzania kontenerami Tagi: kontenery 📦 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/narz%C4%99dzie-wyja%C5%9Bniaj%C4%85ce-polecenia-shellowe-dd1f9dfcb574466aa0b81df79db00760/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/narz%C4%99dzie-wyja%C5%9Bniaj%C4%85ce-polecenia-shellowe-dd1f9dfcb574466aa0b81df79db00760/</guid>
+      <description>Narzędzie wyjaśniające polecenia shellowe Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/optymalizacja-rozmiaru-obrazu-dockerowego-z-14gb-21d3803104ed40138a744067a9f4372e/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/optymalizacja-rozmiaru-obrazu-dockerowego-z-14gb-21d3803104ed40138a744067a9f4372e/</guid>
+      <description>Optymalizacja rozmiaru obrazu dockerowego (z 1,4GB do 22MB) Tagi: kontenery 📦 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/optymalizacja-ustawie%C5%84-mysql-1fc99a1c2261485a856c69b1dcc7f91a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/optymalizacja-ustawie%C5%84-mysql-1fc99a1c2261485a856c69b1dcc7f91a/</guid>
+      <description>Optymalizacja ustawień MySQL Tagi: MySQL 🛢 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/pe%C5%82en-kurs-dockera-film-ponad-3h-6888c28301c04c6ca0e77956681e6eeb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/pe%C5%82en-kurs-dockera-film-ponad-3h-6888c28301c04c6ca0e77956681e6eeb/</guid>
+      <description>Pełen kurs Dockera (film, ponad 3h) Tagi: kontenery 📦 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podr%C4%99cznik-administratora-nginx-wszystko-co-mu-c0ba5495efed4c5081d7f6e4dc9b5e0b/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podr%C4%99cznik-administratora-nginx-wszystko-co-mu-c0ba5495efed4c5081d7f6e4dc9b5e0b/</guid>
+      <description>Podręcznik administratora nginx - wszystko, co musisz wiedzieć Tagi: nginx 🚀 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-konfiguracji-htaccess-dla-apache-36cca830487a4ff0ab48dd893419d823/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-konfiguracji-htaccess-dla-apache-36cca830487a4ff0ab48dd893419d823/</guid>
+      <description>Podstawy konfiguracji .htaccess dla Apache Tagi: apache ⛺️ Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-obs%C5%82ugi-aplikacji-strace-5dbafbdbb01141f8954ff5f5aa00baac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-obs%C5%82ugi-aplikacji-strace-5dbafbdbb01141f8954ff5f5aa00baac/</guid>
+      <description>Podstawy obsługi aplikacji strace Tagi: narzędzia 🛠 Poziom zaawansowania: zaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-obs%C5%82ugi-awk-przetwarzanie-tekstu-0111d2fc3bfe4234a457a1a63251569a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-obs%C5%82ugi-awk-przetwarzanie-tekstu-0111d2fc3bfe4234a457a1a63251569a/</guid>
+      <description>Podstawy obsługi AWK (przetwarzanie tekstu) Tagi: narzędzia 🛠 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-obs%C5%82ugi-filesystemu-proc-c71f6ff9fb504d0c9a3abae02bacba76/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-obs%C5%82ugi-filesystemu-proc-c71f6ff9fb504d0c9a3abae02bacba76/</guid>
+      <description>Podstawy obsługi filesystemu /proc/ Tagi: wiedza 🤓 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-obs%C5%82ugi-netcata-szwajcarski-scyzoryk-do-32d10cfd316941febbf9038d59e6d637/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-obs%C5%82ugi-netcata-szwajcarski-scyzoryk-do-32d10cfd316941febbf9038d59e6d637/</guid>
+      <description>Podstawy obsługi NetCata (szwajcarski scyzoryk do obsługi sieci) Tagi: narzędzia 🛠 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-pisania-skrypt%C3%B3w-shellowych-ad1050b3432a4f57b0ed2f310afe3402/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-pisania-skrypt%C3%B3w-shellowych-ad1050b3432a4f57b0ed2f310afe3402/</guid>
+      <description>Podstawy pisania skryptów shellowych Tagi: Linux 🐧 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-pracy-w-terminalu-linuksowym-poradnik-cf1b5659f9bb4d30ad23feb22311f7db/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-pracy-w-terminalu-linuksowym-poradnik-cf1b5659f9bb4d30ad23feb22311f7db/</guid>
+      <description>Podstawy pracy w terminalu linuksowym - poradnik Tagi: wiedza 🤓 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-varnisha-reverse-proxy-z-cache-ddb75433d36c490baa64f5cd1d22c887/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/podstawy-varnisha-reverse-proxy-z-cache-ddb75433d36c490baa64f5cd1d22c887/</guid>
+      <description>Podstawy Varnisha (reverse proxy z cache) Tagi: narzędzia 🛠 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/polecenia-do-konfiguracji-sieci-na-linuksie-przes-da83fe535f6542b3ac76351e49717b0f/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/polecenia-do-konfiguracji-sieci-na-linuksie-przes-da83fe535f6542b3ac76351e49717b0f/</guid>
+      <description>Polecenia do konfiguracji sieci na Linuksie (przestarzałe i ich nowoczesne odpowiedniki) Tagi: narzędzia 🛠 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/poradnik-do-xargs-czyli-jak-pisa%C4%87-lepsze-skrypt-f76b18d5858044f1aa995cfab8986fb7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/poradnik-do-xargs-czyli-jak-pisa%C4%87-lepsze-skrypt-f76b18d5858044f1aa995cfab8986fb7/</guid>
+      <description>Poradnik do XARGS - czyli jak pisać lepsze skrypty shellowe Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/praca-na-zbiorach-danych-z-u%C5%BCyciem-grep-cut-awk-f9d0c5568a7c49268223068a6d473f15/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/praca-na-zbiorach-danych-z-u%C5%BCyciem-grep-cut-awk-f9d0c5568a7c49268223068a6d473f15/</guid>
+      <description>Praca na zbiorach danych z użyciem grep, cut, awk, sort itp Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/praca-w-terminalu-film-absolutne-podstawy-f56fc6534e3c4aa19457cd64b03f4e88/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/praca-w-terminalu-film-absolutne-podstawy-f56fc6534e3c4aa19457cd64b03f4e88/</guid>
+      <description>Praca w terminalu (film) - absolutne podstawy Tagi: wiedza 🤓 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/przyspieszanie-nginx-9x-z-u%C5%BCyciem-thread-pools-9956d6ec9bfd43baa45311baa4a51016/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/przyspieszanie-nginx-9x-z-u%C5%BCyciem-thread-pools-9956d6ec9bfd43baa45311baa4a51016/</guid>
+      <description>Przyspieszanie Nginx (9x!) z użyciem thread-pools Tagi: nginx 🚀 Poziom zaawansowania: zaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/sprawd%C5%BA-jak-sprawnie-pos%C5%82ugujesz-si%C4%99-terminalem-719b70fc468447dc9c7b79504986e15c/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/sprawd%C5%BA-jak-sprawnie-pos%C5%82ugujesz-si%C4%99-terminalem-719b70fc468447dc9c7b79504986e15c/</guid>
+      <description>Sprawdź jak sprawnie posługujesz się terminalem (gra) Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/sztuczki-u%C5%82atwiaj%C4%85ce-prace-z-bashem-c6f743b7ff09481f90072357037c01b8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/sztuczki-u%C5%82atwiaj%C4%85ce-prace-z-bashem-c6f743b7ff09481f90072357037c01b8/</guid>
+      <description>Sztuczki ułatwiające prace z Bashem Tagi: narzędzia 🛠 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/tunele-ssh-jak-je-tworzy%C4%87-19b47a7f9189408da74f67e5cceb912d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/tunele-ssh-jak-je-tworzy%C4%87-19b47a7f9189408da74f67e5cceb912d/</guid>
+      <description>Tunele SSH - jak je tworzyć? Tagi: Linux 🐧 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/ustawianie-routingu-statycznego-w-linuksie-c68c4fa68f7947b6abce0ec8143c78d1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/ustawianie-routingu-statycznego-w-linuksie-c68c4fa68f7947b6abce0ec8143c78d1/</guid>
+      <description>Ustawianie routingu statycznego w Linuksie Tagi: Linux 🐧 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/ustawienia-firewalla-ufw-na-ubuntu-7d62e780a8134e5097c5fca2db5d8133/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/ustawienia-firewalla-ufw-na-ubuntu-7d62e780a8134e5097c5fca2db5d8133/</guid>
+      <description>Ustawienia firewalla (UFW) na Ubuntu Tagi: Linux 🐧 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/wst%C4%99p-do-kubernetes-dla-zupe%C5%82nie-zielonych-c1d3838ea2394d9a9ec8fb19226103b9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/wst%C4%99p-do-kubernetes-dla-zupe%C5%82nie-zielonych-c1d3838ea2394d9a9ec8fb19226103b9/</guid>
+      <description>Wstęp do Kubernetes dla zupełnie zielonych Tagi: wiedza 🤓 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/wst%C4%99p-do-programowania-w-bashu-52d7be90787145fea872541f15d17b98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/wst%C4%99p-do-programowania-w-bashu-52d7be90787145fea872541f15d17b98/</guid>
+      <description>Wstęp do programowania w Bashu Tagi: Linux 🐧 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/wszystko-co-musisz-wiedzie%C4%87-o-syslogu-2d0e43b0c7a74c9ca068b5cf14b40b96/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/wszystko-co-musisz-wiedzie%C4%87-o-syslogu-2d0e43b0c7a74c9ca068b5cf14b40b96/</guid>
+      <description>Wszystko, co musisz wiedzieć o Syslogu Tagi: wiedza 🤓 Poziom zaawansowania: średniozaawansowany</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/wyja%C5%9Bnienie-terminologii-zwi%C4%85zanej-z-kontenerami-92751e57f7684a839e6373167b0521bc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/wyja%C5%9Bnienie-terminologii-zwi%C4%85zanej-z-kontenerami-92751e57f7684a839e6373167b0521bc/</guid>
+      <description>Wyjaśnienie terminologii związanej z kontenerami i konteneryzacją Tagi: kontenery 📦 Poziom zaawansowania: początkujący</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://mikrus.wkro.pl/biblioteka_mikrusa/zarz%C4%85dzanie-backupami-przez-przegl%C4%85dark%C4%99-rdiff-825e2ad410f24354a3ae9fac944cc524/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mikrus.wkro.pl/biblioteka_mikrusa/zarz%C4%85dzanie-backupami-przez-przegl%C4%85dark%C4%99-rdiff-825e2ad410f24354a3ae9fac944cc524/</guid>
+      <description>Zarządzanie backupami przez przeglądarkę (rdiffweb) Tagi: narzędzia 🛠 Poziom zaawansowania: początkujący</description>
+    </item>
+  </channel>
+</rss>

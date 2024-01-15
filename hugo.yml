@@ -1,0 +1,4 @@
+baseURL: 'https://mikrus.wkro.pl/'
+languageCode: pl
+title: Mikrus - Don't Panic!
+theme: "PaperMod"

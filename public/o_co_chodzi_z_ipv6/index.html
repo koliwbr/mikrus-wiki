@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Mikrus - Don&#39;t Panic!</title>
+<meta name="keywords" content="">
+<meta name="description" content="O co chodzi z IPv6? Serwery Mikrusa działają w trybie “głównie IPv6”. Nie są to serwery “IPv6-only”. Brzmi to dość skomplikowanie, ale już tłumaczę, o co chodzi i jak to działa.
+Spis treści
+Czym jest IPv6? Komputery podłączone do internetu posiadają swoje adresy IP, dzięki czemu mogą być widoczne w sieci i mogą porozumiewać się z innymi komputerami. Przykładowo, możesz posiadać adres np. 1.2.3.4. Taka adresacja nazywana jest “Internet Protocol version 4” albo w skrócie IPv4.">
+<meta name="author" content="">
+<link rel="canonical" href="https://mikrus.wkro.pl/o_co_chodzi_z_ipv6/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://mikrus.wkro.pl/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mikrus.wkro.pl/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mikrus.wkro.pl/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mikrus.wkro.pl/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mikrus.wkro.pl/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="O co chodzi z IPv6? Serwery Mikrusa działają w trybie “głównie IPv6”. Nie są to serwery “IPv6-only”. Brzmi to dość skomplikowanie, ale już tłumaczę, o co chodzi i jak to działa.
+Spis treści
+Czym jest IPv6? Komputery podłączone do internetu posiadają swoje adresy IP, dzięki czemu mogą być widoczne w sieci i mogą porozumiewać się z innymi komputerami. Przykładowo, możesz posiadać adres np. 1.2.3.4. Taka adresacja nazywana jest “Internet Protocol version 4” albo w skrócie IPv4." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mikrus.wkro.pl/o_co_chodzi_z_ipv6/" /><meta property="article:section" content="" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="O co chodzi z IPv6? Serwery Mikrusa działają w trybie “głównie IPv6”. Nie są to serwery “IPv6-only”. Brzmi to dość skomplikowanie, ale już tłumaczę, o co chodzi i jak to działa.
+Spis treści
+Czym jest IPv6? Komputery podłączone do internetu posiadają swoje adresy IP, dzięki czemu mogą być widoczne w sieci i mogą porozumiewać się z innymi komputerami. Przykładowo, możesz posiadać adres np. 1.2.3.4. Taka adresacja nazywana jest “Internet Protocol version 4” albo w skrócie IPv4."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "",
+      "item": "https://mikrus.wkro.pl/o_co_chodzi_z_ipv6/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "O co chodzi z IPv6? Serwery Mikrusa działają w trybie “głównie IPv6”. Nie są to serwery “IPv6-only”. Brzmi to dość skomplikowanie, ale już tłumaczę, o co chodzi i jak to działa.\nSpis treści\nCzym jest IPv6? Komputery podłączone do internetu posiadają swoje adresy IP, dzięki czemu mogą być widoczne w sieci i mogą porozumiewać się z innymi komputerami. Przykładowo, możesz posiadać adres np. 1.2.3.4. Taka adresacja nazywana jest “Internet Protocol version 4” albo w skrócie IPv4.",
+  "keywords": [
+    
+  ],
+  "articleBody": "O co chodzi z IPv6? Serwery Mikrusa działają w trybie “głównie IPv6”. Nie są to serwery “IPv6-only”. Brzmi to dość skomplikowanie, ale już tłumaczę, o co chodzi i jak to działa.\nSpis treści\nCzym jest IPv6? Komputery podłączone do internetu posiadają swoje adresy IP, dzięki czemu mogą być widoczne w sieci i mogą porozumiewać się z innymi komputerami. Przykładowo, możesz posiadać adres np. 1.2.3.4. Taka adresacja nazywana jest “Internet Protocol version 4” albo w skrócie IPv4.\nProtokół IPv6 został wprowadzony, ponieważ liczba urządzeń potrzebujących dostępu do internetu stale rosła, a liczba dostępnych adresów IP w protokole IPv4 była ograniczona.\nIPv4 pozwala na użycie maksymalnie 4,3 miliarda adresów IP, co mogło wydawać się wystarczające w momencie, gdy protokół ten został opracowany. Jednak wraz z rozwojem internetu i pojawieniem się coraz większej liczby urządzeń potrzebujących dostępu do sieci, stało się jasne, że konieczne jest opracowanie nowego protokołu internetowego, który pozwoli na użycie większej liczby adresów IP.\nW obecnych czasach adresacja IPv4 już się skończyła, w rozumieniu: została cała rozdysponowana. Z tego powodu nie da się już zdobyć własnego adresu IPv4 z tzw. ‘rynku pierwotnego’. Można te adresy jedynie od kogoś odkupić (co jest skrajnie drogie) lub wynająć.\nAby zaradzić temu problemowi, powstała nowa, ulepszona i bardziej pojemna adresacja IPv6. Uwierz mi na słowo, że liczba adresów obsługiwana w ramach tej adresacji jest na tyle duża, że nie grozi nam jej wyczerpanie.\nAdresy IPv6 są więc łatwo dostępne, skrajnie tanie, ale…\nIstnieje pewien problem z IPv6 Ta adresacja jest “nowa” z punktu widzenia dostawców internetu (sama adresacja ma już ponad 20 lat), ponieważ od zawsze obsługiwali oni jedynie wersję czwartą adresacji i nie za bardzo mają powody, aby przerzucać się na nowszą wersję.\nZ tego powodu wsparcie dla IPv6 w Polsce i na świecie jest obecnie słabe.\nWedług statystyk Google (https://www.google.com/intl/en/ipv6/statistics.html#tab=per-country-ipv6-adoption), na świecie około 40% komputerów obsługuje ten protokół. Jednak w naszym kraju, w chwili, gdy piszę te słowa, jest to zaledwie 18%. To niestety oznacza, że jeśli postawisz np. swoją stronę WWW na adresacji IPv6, to masz 82% szans, że u Twojego kolegi nie będzie ona działać.\nTa statystyka poprawia się z roku na rok, ale niestety na obecną chwilę, użycie IPv6 do profesjonalnych zastosowań związanych z hostingiem jest praktycznie niemożliwe.\nDlaczego IPv6-mostly na Mikrusie? “Jeśli nie wiesz, o co chodzi, to chodzi o pieniądze”. Celem Mikrusa jest oferowanie możliwie taniej infrastruktury IT do hostowania hobbystycznych projektów. Niestety, adresacja IPv4 dostępna jest już jedynie na rynku wtórnym, a jej ceny - jak wszystkiego, co jest ograniczone - tylko rosną, a nie spadają.\nPrzeważnie za wynajem jednego adresu IPv4 płaci się obecnie od 4zł do 15zł miesięcznie. Najtańszy serwer na Mikrusie kosztuje 35zł/rok. Koszty utrzymania jednego adresu IPv4 to minimum 48zł rocznie. Jak widzisz, matematyka nam się tutaj trochę nie spina. Do tego trzeba jeszcze doliczyć VAT, więc realnie najtańszy IPv4 wyjdzie na poziomie około 60zł/rok (przyjmując 0zł zysku).\nZakładając powyższy scenariusz, koszt Mikrusa 1.0 na adresacji IPv4 musiałby wynosić nie mniej jak 95zł za rok. Oczywiście znajdą się ludzie, którzy powiedzą, że to nadal jest super cena i chętnie zapłacą - ich jest jednak mniejszość.\nProblem z IPv4 jest jeszcze taki, że prawie nikt nie sprzedaje tych adresów na sztuki, a sprzedaje się je na paczki, najczęściej po 255 sztuk. 255*60 daje nam wydatek roczny nie mniejszy niż 15000zł za samą adresację. Kolejny problem polega na tym, że Mikrus nie potrzebuje jednej takiej paczki, a w chwili, gdy piszę te słowa (grudzień 2022), byłoby to minimum 10 paczek. Roczne koszty utrzymania adresacji wyniosłyby nie mniej jak 150 tysięcy złotych przy założeniu zerowego zysku ze sprzedaży adresów. Model biznesowy Mikrusa nie sprawdziłby się przy takich kosztach.\nJak Mikrus rozwiązuje problemy z brakiem IPv4? Typowy użytkownik Mikrusa potrzebuje adresacji IPv4 do dwóch rzeczy:\ndo nawiązania połączenia z serwerem po SSH (Twoja sieć domowa na 82% nie wspiera IPv6) do wystawienia swoich aplikacji na zewnątrz, aby inni użytkownicy mogli z nich korzystać Oznacza to, że musisz mieć adres IPv4 i bez tego nie będziesz w stanie funkcjonować. Nie musisz mieć jednak ”własnego adresu IPv4”. Wystarczy Ci współdzielony.\nI na tym polega sekret Mikrusa. Współdzielimy adresację IPv4, co drastycznie obniża koszty infrastruktury. Zamiast przypisywać każdemu serwerowi oddzielny adres, przypisujemy jeden adres do np. 300 maszyn. Jak się domyślasz, obniża to koszty utrzymania adresacji kilkaset razy. To pozwala utrzymywać niskie ceny VPS-ów.\nJak to działa w praktyce? 🤔\nKażdy użytkownik Mikrusa otrzymuje VPS-a z nadanym numerem ID, który jest trzycyfrowy. Niech to będzie w Twoim przypadku np. “123”. Twój VPS umieszczony zostaje na jednej z naszych maszyn. Najczęściej maszyny mają prefix ‘srv’ i kolejny numer w nazwie np. “srv20”.\nOtrzymujesz od nas na start (później możesz to zwiększyć) trzy numery portów:\n10000 + ID = port SSH 20000 + ID = port do dowolnego wykorzystania 30000 + ID = port do dowolnego wykorzystania Oznacza to, że chcąc połączyć się z serwerem VPS o numerze “123” na maszynie srv20 przez SSH, musisz wpisać polecenie:\nssh root@srv20.mikr.us -p10123 Aplikację będącą serwerem dowolnych usług możesz umieścić za to na portach 20123 oraz 30123. Oba porty nasłuchują zarówno komunikacji TCP, jak i UDP, więc bez problemu postawisz tam zarówno serwery webowe, jak i np. aplikacje typu OpenVPN czy Wireguard.\n🌎 Aplikacje webowe\nO ile hostowanie np. serwera OpenVPN na porcie 20123 nie jest problemem, to hostowanie tam serwera webowego już nie jest takie fajne. Chyba nie chcesz, aby adres np. Twojego bloga na Wordpressie wyglądał tak:\nhttp://srv20.mikr.us:20123/\nAby temu zaradzić, wprowadziliśmy dwa rozwiązania. Jeśli posiadasz własną, wykupioną przez Ciebie domenę (u dowolnego dostawcy, bo Mikrus nie sprzedaje domen), to namawiamy użytkowników do używania darmowej usługi Cloudflare do podłączenia tej domeny do VPS-a. Firma Cloudflare poza tym, że obsługuje domeny, świadczy także usługę tunelowania IPv4→IPv6.\nNie martw się, taka konfiguracja jest dziecinnie prosta (zero poleceń w terminalu, wszystko wyklikuje się w interfejsie webowym). Mamy nawet oddzielny poradnik jak to zrobić:\nPoradnik na temat konfiguracji usługi Cloudflare na Mikrusie\nJeśli nie posiadasz własnej domeny, to także nie jest problemem. Mikrus oferuje darmowe subdomeny dla każdego. Możesz więc hostować swoją stronę pod klasyczną nazwą domenową, bez podawania dziwnych i niewygodnych numerów portów. Mało tego! Jeszcze zadbamy za Ciebie o obsługę HTTPS (nie musisz robić absolutnie niczego, aby wspierać ruch po HTTPS).\nDwa dodatkowe porty to mało!\nW panelu zupełnie bezpłatnie możesz wyklikać sobie dodatkowe 5 portów TCP. Oznacza to, że w praktyce możesz nasłuchiwać na aż 7 portach.\nNasze statystyki pokazują, że przeciętny użytkownik Mikrusa zużywa jeden dodatkowy port. Kilkadziesiąt procent użytkowników wykorzystuje dwa podstawowe porty, a liczbę użytkowników wykorzystujących wszystkie 7 dostępnych portów można zliczyć na palcach obu rąk.\nMoże Ci się wydawać, że 7 portów to nadal mało, bo przecież Ty chcesz postawić na serwerze np. 20 kontenerów Dockera. Śmiało stawiaj! Zastanów się tylko, czy wszystkie 20 potrzebuje dostępu ze świata? Przeważnie konfiguracja takiej infrastruktury wygląda tak, że jeden z kontenerów wystawia usługę na świat, a pozostałe z nich komunikują się tylko między sobą. Oznacza to, że najprawdopodobniej Twoja infrastruktura zbudowana z 20 kontenerów będzie zużywać 1-2 porty TCP.\nNie limitujemy, ile portów zużyjesz na adresacji prywatnej oraz ile wykorzystasz na adresacji IPv6. Oznacza to, że na Mikrusie możesz postawić nieograniczoną liczbę usług. Realnym limitem jest jedynie ilość pamięci RAM, bo Twoje usługi muszą się jednak zmieścić w pamięci serwera.\nPowrót do strony głównej\nCzęste komentarze i pytania ⬇️ Czy mogę jednak dopłacić i otrzymać adres IPv4?\nNie możesz. Tak jak wspomina tekst, adresy IPv4 sprzedawane są na paczki, więc chcąc sprzedać Ci jedną sztukę, musimy kupić/wynająć ich najczęściej 255 sztuk, aby to było opłacalne cenowo. Nijak się to nie będzie opłacało ani nam, ani Tobie.\nJakim cudem IP kosztuje 4-15zł? Przecież OVH daje je za darmo!\nTak, dają po 16 sztuk darmowych adresów do każdego zakupionego serwera dedykowanego (dotyczy to niektórych ofert). Tylko my nie potrzebujemy 16 sztuk, tylko nie mniej jak 2500 (stan na grudzień 2022). Oznacza to, że aby korzystać z “darmowych IP”, musielibyśmy u nich kupić minimum 157 serwerów dedykowanych, a one nie są darmowe, a koszt zakupu dedyków musielibyśmy przerzucić i tak na użytkowników. Nikomu by się to nie opłacało.\nZamiast wynajmować IPv4, można je przecież kupić. Wyjdzie taniej.\nProblemy są tutaj dwa. Koszt kupna adresu IPv4 to około 57 USD za sztukę (stan na grudzień 2022). Chcąc kupić 2500 sztuk, wychodzi to niecałe 630 tysięcy PLN. Aktualnie nie posiadamy tylu drobnych w portfelu. Drugi problem to zainteresowanie adresacją IPv4 wśród użytkowników Mikrusa. Nauczyliśmy naszych użytkowników, jak żyć w świecie IPv6-mostly i podoba im się to. Regularnie przeprowadzane ankiety pokazują, że większość użytkowników nie wykazuje zainteresowania posiadaniem własnego adresu IPv4. Wprowadzanie takiej adresacji do sprzedaży mogłoby tylko bezcelowo podbić cenę VPS-ów, bez zysku dla użytkowników. Wolimy utrzymywać niskie ceny.\nCała konkurencja oferuje własne adresy IPv4. Wygryzą Was z rynku!\nMikrus skierowany jest do zupełnie innego segmentu rynku. Profesjonaliści mający bardzo wywindowane wymagania powinni zdecydowanie kupić VPS-y u naszej konkurencji. Zapłacą za to prawdopodobnie 5-10 razy więcej, ale zyskają dzięki temu adresację IPv4, mocniejsze parametry i otrzymają mniej rygorystyczny regulamin usługi (np. na Mikrusie nie wolno stawiać serwerów gier oraz aplikacji audio/streaming w stylu TeamSpeak, Shoutcast, Icecast, Plex itp.). Mikrus nie jest idealnym rozwiązaniem dla każdego.\n",
+  "wordCount" : "1508",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mikrus.wkro.pl/o_co_chodzi_z_ipv6/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mikrus - Don't Panic!",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://mikrus.wkro.pl/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://mikrus.wkro.pl/" accesskey="h" title="Mikrus - Don&#39;t Panic! (Alt + H)">Mikrus - Don&#39;t Panic!</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="o-co-chodzi-z-ipv6">O co chodzi z IPv6?<a hidden class="anchor" aria-hidden="true" href="#o-co-chodzi-z-ipv6">#</a></h1>
+<p>Serwery Mikrusa działają w trybie “głównie IPv6”. Nie są to serwery “IPv6-only”. Brzmi to dość skomplikowanie, ale już tłumaczę, o co chodzi i jak to działa.</p>
+<p><strong>Spis treści</strong></p>
+<h2 id="czym-jest-ipv6">Czym jest IPv6?<a hidden class="anchor" aria-hidden="true" href="#czym-jest-ipv6">#</a></h2>
+<p>Komputery podłączone do internetu posiadają swoje adresy IP, dzięki czemu mogą być widoczne w sieci i mogą porozumiewać się z innymi komputerami. Przykładowo, możesz posiadać adres np. 1.2.3.4. Taka adresacja nazywana jest “Internet Protocol version 4” albo w skrócie IPv4.</p>
+<p>Protokół IPv6 został wprowadzony, ponieważ liczba urządzeń potrzebujących dostępu do internetu stale rosła, a liczba dostępnych adresów IP w protokole IPv4 była ograniczona.</p>
+<p>IPv4 pozwala na użycie maksymalnie 4,3 miliarda adresów IP, co mogło wydawać się wystarczające w momencie, gdy protokół ten został opracowany. Jednak wraz z rozwojem internetu i pojawieniem się coraz większej liczby urządzeń potrzebujących dostępu do sieci, stało się jasne, że konieczne jest opracowanie nowego protokołu internetowego, który pozwoli na użycie większej liczby adresów IP.</p>
+<p>W obecnych czasach adresacja IPv4 już się skończyła, w rozumieniu: została cała rozdysponowana. Z tego powodu nie da się już zdobyć własnego adresu IPv4 z tzw. ‘rynku pierwotnego’. Można te adresy jedynie od kogoś odkupić (co jest skrajnie drogie) lub wynająć.</p>
+<p>Aby zaradzić temu problemowi, powstała nowa, ulepszona i bardziej pojemna adresacja IPv6. Uwierz mi na słowo, że liczba adresów obsługiwana w ramach tej adresacji jest na tyle duża, że nie grozi nam jej wyczerpanie.</p>
+<p>Adresy IPv6 są więc łatwo dostępne, skrajnie tanie, ale…</p>
+<h2 id="istnieje-pewien-problem-z-ipv6">Istnieje pewien problem z IPv6<a hidden class="anchor" aria-hidden="true" href="#istnieje-pewien-problem-z-ipv6">#</a></h2>
+<p>Ta adresacja jest “nowa” z punktu widzenia dostawców internetu (sama adresacja ma już ponad 20 lat), ponieważ od zawsze obsługiwali oni jedynie wersję czwartą adresacji i nie za bardzo mają powody, aby przerzucać się na nowszą wersję.</p>
+<p>Z tego powodu wsparcie dla IPv6 w Polsce i na świecie jest obecnie słabe.</p>
+<p>Według statystyk Google (<a href="https://www.google.com/intl/en/ipv6/statistics.html#tab=per-country-ipv6-adoption">https://www.google.com/intl/en/ipv6/statistics.html#tab=per-country-ipv6-adoption</a>), na świecie około 40% komputerów obsługuje ten protokół. Jednak w naszym kraju, w chwili, gdy piszę te słowa, jest to zaledwie 18%. To niestety oznacza, że jeśli postawisz np. swoją stronę WWW na adresacji IPv6, to masz 82% szans, że u Twojego kolegi nie będzie ona działać.</p>
+<p>Ta statystyka poprawia się z roku na rok, ale niestety na obecną chwilę, użycie IPv6 do profesjonalnych zastosowań związanych z hostingiem jest praktycznie niemożliwe.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="dlaczego-ipv6-mostly-na-mikrusie">Dlaczego IPv6-mostly na Mikrusie?<a hidden class="anchor" aria-hidden="true" href="#dlaczego-ipv6-mostly-na-mikrusie">#</a></h2>
+<p>“Jeśli nie wiesz, o co chodzi, to chodzi o pieniądze”. Celem Mikrusa jest oferowanie możliwie taniej infrastruktury IT do hostowania hobbystycznych projektów. Niestety, adresacja IPv4 dostępna jest już jedynie na rynku wtórnym, a jej ceny - jak wszystkiego, co jest ograniczone - tylko rosną, a nie spadają.</p>
+<p>Przeważnie za wynajem jednego adresu IPv4 płaci się obecnie od 4zł do 15zł miesięcznie. Najtańszy serwer na Mikrusie kosztuje 35zł/rok. Koszty utrzymania jednego adresu IPv4 to minimum 48zł rocznie. Jak widzisz, matematyka nam się tutaj trochę nie spina. Do tego trzeba jeszcze doliczyć VAT, więc realnie najtańszy IPv4 wyjdzie na poziomie około 60zł/rok (przyjmując 0zł zysku).</p>
+<p>Zakładając powyższy scenariusz, koszt Mikrusa 1.0 na adresacji IPv4 musiałby wynosić nie mniej jak 95zł za rok. Oczywiście znajdą się ludzie, którzy powiedzą, że to nadal jest super cena i chętnie zapłacą - ich jest jednak mniejszość.</p>
+<p>Problem z IPv4 jest jeszcze taki, że prawie nikt nie sprzedaje tych adresów na sztuki, a sprzedaje się je na paczki, najczęściej po 255 sztuk. 255*60 daje nam wydatek roczny nie mniejszy niż 15000zł za samą adresację. Kolejny problem polega na tym, że Mikrus nie potrzebuje jednej takiej paczki, a w chwili, gdy piszę te słowa (grudzień 2022), byłoby to minimum 10 paczek. Roczne koszty utrzymania adresacji wyniosłyby nie mniej jak 150 tysięcy złotych przy założeniu zerowego zysku ze sprzedaży adresów. Model biznesowy Mikrusa nie sprawdziłby się przy takich kosztach.</p>
+<h2 id="jak-mikrus-rozwiązuje-problemy-z-brakiem-ipv4">Jak Mikrus rozwiązuje problemy z brakiem IPv4?<a hidden class="anchor" aria-hidden="true" href="#jak-mikrus-rozwiązuje-problemy-z-brakiem-ipv4">#</a></h2>
+<p>Typowy użytkownik Mikrusa potrzebuje adresacji IPv4 do dwóch rzeczy:</p>
+<ul>
+<li>do nawiązania połączenia z serwerem po SSH (Twoja sieć domowa na 82% nie wspiera IPv6)</li>
+<li>do wystawienia swoich aplikacji na zewnątrz, aby inni użytkownicy mogli z nich korzystać</li>
+</ul>
+<p>Oznacza to, że musisz mieć adres IPv4 i bez tego nie będziesz w stanie funkcjonować. Nie musisz mieć jednak ”własnego adresu IPv4”. Wystarczy Ci współdzielony.</p>
+<p>I na tym polega sekret Mikrusa. Współdzielimy adresację IPv4, co drastycznie obniża koszty infrastruktury. Zamiast przypisywać każdemu serwerowi oddzielny adres, przypisujemy jeden adres do np. 300 maszyn. Jak się domyślasz, obniża to koszty utrzymania adresacji kilkaset razy. To pozwala utrzymywać niskie ceny VPS-ów.</p>
+<p><strong>Jak to działa w praktyce?</strong>  🤔</p>
+<p>Każdy użytkownik Mikrusa otrzymuje VPS-a z nadanym numerem ID, który jest trzycyfrowy. Niech to będzie w Twoim przypadku np. “123”. Twój VPS umieszczony zostaje na jednej z naszych maszyn. Najczęściej maszyny mają prefix ‘srv’ i kolejny numer w nazwie np. “srv20”.</p>
+<p>Otrzymujesz od nas na start (później możesz to zwiększyć) trzy numery portów:</p>
+<ul>
+<li>10000 + ID = port SSH</li>
+<li>20000 + ID = port do dowolnego wykorzystania</li>
+<li>30000 + ID = port do dowolnego wykorzystania</li>
+</ul>
+<p>Oznacza to, że chcąc połączyć się z serwerem VPS o numerze “123” na maszynie srv20 przez SSH, musisz wpisać polecenie:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">ssh</span> <span style="color:#960050;background-color:#1e0010">root@srv20.mikr.us</span> <span style="color:#960050;background-color:#1e0010">-p10123</span>
+</span></span></code></pre></div><p>Aplikację będącą serwerem dowolnych usług możesz umieścić za to na portach 20123 oraz 30123. Oba porty nasłuchują zarówno komunikacji TCP, jak i UDP, więc bez problemu postawisz tam zarówno serwery webowe, jak i np. aplikacje typu OpenVPN czy Wireguard.</p>
+<p>🌎 <strong>Aplikacje webowe</strong></p>
+<p>O ile hostowanie np. serwera OpenVPN na porcie 20123 nie jest problemem, to hostowanie tam serwera webowego już nie jest takie fajne. Chyba nie chcesz, aby adres np. Twojego bloga na Wordpressie wyglądał tak:</p>
+<p><a href="http://srv20.mikr.us:20123/">http://srv20.mikr.us:20123/</a></p>
+<p>Aby temu zaradzić, wprowadziliśmy dwa rozwiązania. Jeśli posiadasz własną, wykupioną przez Ciebie domenę (u dowolnego dostawcy, bo Mikrus nie sprzedaje domen), to namawiamy użytkowników do używania darmowej usługi Cloudflare do podłączenia tej domeny do VPS-a. Firma Cloudflare poza tym, że obsługuje domeny, świadczy także usługę tunelowania IPv4→IPv6.</p>
+<p>Nie martw się, taka konfiguracja jest dziecinnie prosta (zero poleceń w terminalu, wszystko wyklikuje się w interfejsie webowym). Mamy nawet oddzielny poradnik jak to zrobić:</p>
+<p><a href="Podpie%CC%A8cie%20domeny%20przez%20CloudFlare%2079b0c64f20044d79a33cbc59e8501a9f.md">Poradnik na temat konfiguracji usługi Cloudflare na Mikrusie</a></p>
+<p>Jeśli nie posiadasz własnej domeny, to także nie jest problemem. <strong>Mikrus oferuje darmowe subdomeny dla każdego</strong>. Możesz więc hostować swoją stronę pod klasyczną nazwą domenową, bez podawania dziwnych i niewygodnych numerów portów. Mało tego! Jeszcze zadbamy za Ciebie o obsługę HTTPS (nie musisz robić absolutnie niczego, aby wspierać ruch po HTTPS).</p>
+<p><strong>Dwa dodatkowe porty to mało!</strong></p>
+<p>W panelu zupełnie bezpłatnie możesz wyklikać sobie dodatkowe 5 portów TCP. Oznacza to, że w praktyce możesz nasłuchiwać na aż 7 portach.</p>
+<p>Nasze statystyki pokazują, że przeciętny użytkownik Mikrusa zużywa jeden dodatkowy port. Kilkadziesiąt procent użytkowników wykorzystuje dwa podstawowe porty, a liczbę użytkowników wykorzystujących wszystkie 7 dostępnych portów można zliczyć na palcach obu rąk.</p>
+<p>Może Ci się wydawać, że 7 portów to nadal mało, bo przecież Ty chcesz postawić na serwerze np. 20 kontenerów Dockera. Śmiało stawiaj! Zastanów się tylko, czy wszystkie 20 potrzebuje dostępu ze świata? Przeważnie konfiguracja takiej infrastruktury wygląda tak, że jeden z kontenerów wystawia usługę na świat, a pozostałe z nich komunikują się tylko między sobą. Oznacza to, że najprawdopodobniej Twoja infrastruktura zbudowana z 20 kontenerów będzie zużywać 1-2 porty TCP.</p>
+<p>Nie limitujemy, ile portów zużyjesz na adresacji prywatnej oraz ile wykorzystasz na adresacji IPv6. Oznacza to, że na Mikrusie możesz postawić nieograniczoną liczbę usług. Realnym limitem jest jedynie ilość pamięci RAM, bo Twoje usługi muszą się jednak zmieścić w pamięci serwera.</p>
+<p><a href="../MIKR%20US%20-%20Don't%20Panic!%2072ab7e2ae85342d2a0a0c9443d521166.md">Powrót do strony głównej</a></p>
+<h2 id="częste-komentarze-i-pytania--">Częste komentarze i pytania  ⬇️<a hidden class="anchor" aria-hidden="true" href="#częste-komentarze-i-pytania--">#</a></h2>
+<ul>
+<li>
+<p><strong>Czy mogę jednak dopłacić i otrzymać adres IPv4?</strong></p>
+<p><strong>Nie możesz</strong>. Tak jak wspomina tekst, adresy IPv4 sprzedawane są na paczki, więc chcąc sprzedać Ci jedną sztukę, musimy kupić/wynająć ich najczęściej 255 sztuk, aby to było opłacalne cenowo. Nijak się to nie będzie opłacało ani nam, ani Tobie.</p>
+</li>
+<li>
+<p><strong>Jakim cudem IP kosztuje 4-15zł? Przecież OVH daje je za darmo!</strong></p>
+<p>Tak, dają po 16 sztuk darmowych adresów do każdego zakupionego serwera dedykowanego (dotyczy to niektórych ofert). Tylko my nie potrzebujemy 16 sztuk, tylko nie mniej jak 2500 (stan na grudzień 2022). Oznacza to, że aby korzystać z “darmowych IP”, musielibyśmy u nich kupić minimum 157 serwerów dedykowanych, a one nie są darmowe, a koszt zakupu dedyków musielibyśmy przerzucić i tak na użytkowników. Nikomu by się to nie opłacało.</p>
+</li>
+<li>
+<p><strong>Zamiast wynajmować IPv4, można je przecież kupić. Wyjdzie taniej.</strong></p>
+<p>Problemy są tutaj dwa. Koszt kupna adresu IPv4 to około 57 USD za sztukę (stan na grudzień 2022). Chcąc kupić 2500 sztuk, wychodzi to niecałe 630 tysięcy PLN. Aktualnie nie posiadamy tylu drobnych w portfelu. Drugi problem to zainteresowanie adresacją IPv4 wśród użytkowników Mikrusa. Nauczyliśmy naszych użytkowników, jak żyć w świecie IPv6-mostly i podoba im się to. Regularnie przeprowadzane ankiety pokazują, że większość użytkowników nie wykazuje zainteresowania posiadaniem własnego adresu IPv4. Wprowadzanie takiej adresacji do sprzedaży mogłoby tylko bezcelowo podbić cenę VPS-ów, bez zysku dla użytkowników. Wolimy utrzymywać niskie ceny.</p>
+</li>
+<li>
+<p><strong>Cała konkurencja oferuje własne adresy IPv4. Wygryzą Was z rynku!</strong></p>
+<p>Mikrus skierowany jest do zupełnie innego segmentu rynku. Profesjonaliści mający bardzo wywindowane wymagania powinni zdecydowanie kupić VPS-y u naszej konkurencji. Zapłacą za to prawdopodobnie 5-10 razy więcej, ale zyskają dzięki temu adresację IPv4, mocniejsze parametry i otrzymają mniej rygorystyczny regulamin usługi (np. na Mikrusie nie wolno stawiać serwerów gier oraz aplikacji audio/streaming w stylu TeamSpeak, Shoutcast, Icecast, Plex itp.). Mikrus nie jest idealnym rozwiązaniem dla każdego.</p>
+</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://mikrus.wkro.pl/">Mikrus - Don&#39;t Panic!</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
