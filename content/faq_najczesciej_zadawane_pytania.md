@@ -8,7 +8,7 @@
     
 - Cena podana na stronie to netto, czy brutto?
     
-    Jest to kwota ostateczna, jaką płacisz (brutto)
+    Jest to kwota ostateczna, jaką płacisz (brutto)
     
 - Ile będzie kosztował serwer po pierwszym roku?
     
@@ -20,12 +20,12 @@
     
 - Czy będę mógł przejść z oferty 1.0 na 2.x lub 3.x? A z wersji 2.x na 3.x?
     
-    Tak. Dla migracji 2.x → 3.x ten proces jest automatyczny. Po zalogowaniu się do panelu znajdziesz taką opcję. Natomiast wersja 1.0 wiąże się ze zmianą serwera odpowiedniego pod daną wersję. Należy wtedy zgłosić taką prośbę poprzez system ticketów lub na “pomoc@mikr.us”.
+    Tak. Dla migracji 2.x → 3.x ten proces jest automatyczny. Po zalogowaniu się do panelu znajdziesz taką opcję. Natomiast wersja 1.0 wiąże się ze zmianą serwera odpowiedniego pod daną wersję. Należy wtedy zgłosić taką prośbę poprzez system ticketów lub na “pomoc@mikr.us”.
     Koszty migracji wynoszą tyle, co zakup serwera docelowego, a pozostałe dni abonamentu są przelewane na nowy serwer (z zachowaniem proporcji wartości serwera).
     
-- Jak poradzę sobie bez adresu IPv4?
+- Jak poradzę sobie bez adresu IPv4?
     
-    Otrzymasz na start 2 przekierowane porty na IPv4 + jeden do połączenia przez SSH. Docelowo możesz mieć aż 7 przekierowanych portów na swój serwer. Posiadasz także adres IPv6, na którym możesz postawić tyle usług, ile zechcesz. [Przeczytaj także koniecznie ten artykuł](O%20co%20chodzi%20z%20IPv6%2002adc6a137f74a31a93cefed553658f8.md).
+    Otrzymasz na start 2 przekierowane porty na IPv4 + jeden do połączenia przez SSH. Docelowo możesz mieć aż 7 przekierowanych portów na swój serwer. Posiadasz także adres IPv6, na którym możesz postawić tyle usług, ile zechcesz. [Przeczytaj także koniecznie ten artykuł](../o_co_chodzi_z_ipv6).
     
 - Czy do serwera otrzymam jakiś panel sterowania?
     
@@ -34,7 +34,7 @@
 
 ## Sprawy techniczne
 
-- Czy na Mikrusie można postawić stronę na Wordpressie?
+- Czy na Mikrusie można postawić stronę na Wordpressie?
     
     Tak, jest to bezproblemowe. Mikrus hostuje setki blogów na Wordpressie :) 
     
@@ -42,9 +42,9 @@
     
     Możesz ich mieć tyle, ile zechcesz i na ile pozwolą Ci zasoby serwera. Wielu użytkowników hostuje u nas po 2-4 strony na VPS.
     
-- Czy Mikrus nadaje się do aplikacji pisanych w Node, Python, Java, .NET?
+- Czy Mikrus nadaje się do aplikacji pisanych w Node, Python, Java, .NET?
     
-    Tak, ale ze względu na zaawansowanie tych technologii, sugerowane jest stawianie ich na Mikrusie 2.1, aby działały płynnie. Możesz oczywiście pobawić się w optymalizację zasobów i spróbować postawić takie usługi na wersji 1.0, ale nie jest to zalecane.
+    Tak, ale ze względu na zaawansowanie tych technologii, sugerowane jest stawianie ich na Mikrusie 2.1, aby działały płynnie. Możesz oczywiście pobawić się w optymalizację zasobów i spróbować postawić takie usługi na wersji 1.0, ale nie jest to zalecane.
     
 - Czy otrzymam dostęp ROOT do serwera?
     
@@ -52,11 +52,11 @@
     
 - Czy mogę postawić FreeBSD, OpenBSD lub NetBSD?
     
-    Nie jest to technicznie możliwe. VPS, którego otrzymujesz to kontener LXC ze współdzielonym kernelem. Nie da się więc na nim postawić Unixa
+    Nie jest to technicznie możliwe. VPS, którego otrzymujesz to kontener LXC ze współdzielonym kernelem. Nie da się więc na nim postawić Unixa
     
-- Czy do serwera można podpiąć własną domenę?
+- Czy do serwera można podpiąć własną domenę?
     
-    Tak. Można to zrobić na kilka sposobów. Jednym z nich jest użycie [darmowej usługi CloudFlare](Podpie%CC%A8cie%20domeny%20przez%20CloudFlare%2079b0c64f20044d79a33cbc59e8501a9f.md), a drugi to użycie naszych wewnętrznych mechanizmów.
+    Tak. Można to zrobić na kilka sposobów. Jednym z nich jest użycie [darmowej usługi CloudFlare](../podpiecie_domeny_przez_cloudflare), a drugi to użycie [naszych wewnętrznych mechanizmów](../cytrus).
     
 
 ## Co wolno, a czego nie wolno
@@ -65,7 +65,7 @@
     
     Po pierwsze, technicznie byłoby to bardzo trudne (do wygodnej gry potrzebujesz około 4GB RAM), a po drugie, regulamin Mikrusa zabrania stawiania serwerów gier.
     
-- Czy Mikrus nadaje się do serwera TeamSpeak lub bota muzycznego na Discord?
+- Czy Mikrus nadaje się do serwera TeamSpeak lub bota muzycznego na Discord?
     
     Technicznie się nadaje, ale regulamin zabrania stawiania tego typu softu. Mieliśmy niezliczone ilości ataków DDoS na serwery TeamSpeaka, więc nie są one mile u nas widziane.
     
@@ -76,19 +76,19 @@
 
 ## Pytania na temat głównych serwerów
 
-- Gdzie fizycznie stoją serwery Mikrusa?
+- Gdzie fizycznie stoją serwery Mikrusa?
     
     Wszystkie serwery Mikrusa stoją fizycznie w serwerowni Hetznera w Finlandii (Helsinki).
     
-- Jakie są parametry głównych serwerów, na których stoją VPSy?
+- Jakie są parametry głównych serwerów, na których stoją VPSy?
     
     Obecnie, serwery Mikrusa to maszyny EX52-NVMe oraz AX-41 z oferty Hetznera (128GB RAM, dyski SSD NVMe, CPU i7-8700 lub AMD Ryzen 5) 
     
-- Na jakim łączu stoją serwery?
+- Na jakim łączu stoją serwery?
     
     Serwery Mikrusa posiadają łącze 1Gbps
     
 
-## Zdobądź swojego Mikrusa na 👇
+## Zdobądź swojego Mikrusa na 👇
 
 ## [https://mikr.us/](https://mikr.us/)

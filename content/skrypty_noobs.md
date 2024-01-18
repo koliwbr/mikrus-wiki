@@ -1,6 +1,6 @@
 # Skrypty NOOBS
 
-NOOBS (New Out Of the Box System) to zestaw skryptów do szybkiego stawiania usług na Mikrusie. Jest to projekt otwartoźródłowy i każdy z użytkowników może rozbudować kolekcje o własne skrypty.
+NOOBS (New Out Of the Box System) to zestaw skryptów do szybkiego stawiania usług na Mikrusie. Jest to projekt otwartoźródłowy i każdy z użytkowników może rozbudować kolekcje o własne skrypty.
 
 [https://github.com/unkn0w/noobs/](https://github.com/unkn0w/noobs/)
 
@@ -8,4 +8,4 @@ Dzięki przygotowanym skryptom łatwo zainstalujesz Apache, OpenVZ, Jenkinsa, We
 
 Na nowo zainstalowanym serwerze, skrypty NOOBS wrzucane są automatycznie do /opt/noobs i dla wygody użytkownika linkowane do /root/noobs
 
-[Powrót do strony głównej](../MIKR%20US%20-%20Don't%20Panic!%2072ab7e2ae85342d2a0a0c9443d521166.md)
+[Powrót do strony głównej](/)

@@ -15,4 +15,4 @@ Jeśli liczba portów okaże się dla Ciebie niewystarczająca, to w panelu uż
 > **Ważne**: porty zamówione w panelu to porty TCP. Jeśli potrzebujesz protokołu UDP, skorzystaj z portów 200XX lub 300XX!
 > 
 
-[Powrót do strony głównej](../MIKR%20US%20-%20Don't%20Panic!%2072ab7e2ae85342d2a0a0c9443d521166.md)
+[Powrót do strony głównej](/)

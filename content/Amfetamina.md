@@ -6,4 +6,4 @@ W praktyce otrzymasz dodatkową pamięć operacyjną i zniesiony zostanie lim
 
 **Podbijanie parametrów serwera jest możliwe raz na 6 godzin.**
 
-[Powrót do strony głównej](../MIKR%20US%20-%20Don't%20Panic!%2072ab7e2ae85342d2a0a0c9443d521166.md)
+[Powrót do strony głównej](/)

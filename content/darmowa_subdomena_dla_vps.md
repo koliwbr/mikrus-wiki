@@ -13,4 +13,4 @@ Ważne uwagi:
 - Domena wskazuje na Twój adres IPv6, więc Twój serwer webowy (np. Apache czy nginX) musi słuchać na tej adresacji (domyślnie słuchają na IPv4!)
 - **domeny NIE da się użyć do logowania przez SSH** czy do łączenia się z portami innymi niż 80/443
 
-[Powrót do strony głównej](../MIKR%20US%20-%20Don't%20Panic!%2072ab7e2ae85342d2a0a0c9443d521166.md)
+[Powrót do strony głównej](/)

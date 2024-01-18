@@ -1,6 +1,6 @@
 # Konfiguracja MySQL/MariaDB
 
-Chcąc postawić na Mikrusie własną bazę danych (możesz także [skorzystać ze współdzielonej](Wspo%CC%81%C5%82dzielone%20bazy%20danych%20139d979d5105492282aef2eb20bfc208.md) jeśli chcesz), wykonaj poniższe kroki.
+Chcąc postawić na Mikrusie własną bazę danych (możesz także [skorzystać ze współdzielonej](Wspo%CC%81%C5%82dzielone%20bazy%20danych%20139d979d5105492282aef2eb20bfc208.md) jeśli chcesz), wykonaj poniższe kroki.
 
 Zaktualizuj pakiety w systemie
 
@@ -27,7 +27,7 @@ mysql
 Następnie wydaj polecenie do założenia bazy - niech baza nazywa się np. 'kwiaty'
 
 ```sql
-create database **kwiaty;**
+create database kwiaty;
 ```
 
 ## Dodanie nowego użytkownika
@@ -35,7 +35,7 @@ create database **kwiaty;**
 Wpisz w konsoli MySQL polecenie zakładające użytkownika 'roman' z hasłem 'banan' (to przykład - podaj własne).
 
 ```sql
-grant all privileges on **kwiaty**.* to '**roman**'@'%' identified by '**banan**';
+grant all privileges on kwiaty.* to 'roman'@'%' identified by 'banan';
 ```
 
 Przeładuj jeszcze prawa dostępu tak, aby Twoje zmiany były natychmiast widoczne
@@ -58,7 +58,7 @@ Konieczna będzie także zmiana numeru portu, bo port 3306 nie jest na Mikrusie 
 port = 20355
 ```
 
-Po tych zmianach musisz zrestartować bazę
+Po tych zmianach musisz zrestartować bazę
 
 ```bash
 service mysql restart
@@ -66,16 +66,16 @@ service mysql restart
 
 ## Importowanie danych do bazy
 
-Jeśli masz zrzut danych w formacie pliku SQL np. z poprzedniego hostingu, to wykonaj poniższe instrukcje, aby go zaimportować na Mikrusa do własnej bazy
+Jeśli masz zrzut danych w formacie pliku SQL np. z poprzedniego hostingu, to wykonaj poniższe instrukcje, aby go zaimportować na Mikrusa do własnej bazy
 
 - Wrzuć plik SQL gdzieś na serwer, np. do **/tmp/baza.sql**
-- Połącz się z mysql za pomocą polecenia
+- Połącz się z mysql za pomocą polecenia
 
 ```bash
 mysql
 ```
 
-- Połącz się z bazą, do której chcesz zaimportować dane (u nas się zwie ona 'kwiaty')
+- Połącz się z bazą, do której chcesz zaimportować dane (u nas się zwie ona 'kwiaty')
 
 ```sql
 use kwiaty;
@@ -91,10 +91,10 @@ Gotowe :)
 
 ## Dodatkowe uwagi
 
-To jest poradnik dla początkujących. Niektóre rzeczy dałoby się zrobić lepiej. Można dodać do tego firewalla, nowemu użytkownikowi dać tyle praw ile faktycznie potrzebuje (a nie wszystkie), czy ograniczyć hosty użytkowników do konkretnych IP/domen zamiast "%".
+To jest poradnik dla początkujących. Niektóre rzeczy dałoby się zrobić lepiej. Można dodać do tego firewalla, nowemu użytkownikowi dać tyle praw ile faktycznie potrzebuje (a nie wszystkie), czy ograniczyć hosty użytkowników do konkretnych IP/domen zamiast "%".
 
 Nie wspominam tutaj także o optymalizacji ustawień MySQL. To temat zbyt szeroki i zbyt trudny dla kogoś, kto po prostu chce mieć działającą bazę.
 
 Usprawnień jest wiele, ale na poziomie początkującego użytkownika, powyższy tutorial będzie dla Ciebie w zupełności wystarczający.
 
-[Powrót do strony głównej](../MIKR%20US%20-%20Don't%20Panic!%2072ab7e2ae85342d2a0a0c9443d521166.md)
+[Powrót do strony głównej](/)

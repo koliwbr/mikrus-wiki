@@ -1,6 +1,6 @@
 # Too many authentication failures [preauth]
 
-Błąd podany w tytule może wystąpić podczas łączenia się do serwera i to niezależnie od tego, czy logujesz się hasłem, czy kluczem SSH.
+Błąd podany w tytule może wystąpić podczas łączenia się do serwera i to niezależnie od tego, czy logujesz się hasłem, czy kluczem SSH.
 
 Winę ponoszą jednak klucze - dlaczego tak się dzieje?
 
@@ -26,13 +26,13 @@ Ten problem rozwiązać możesz w sposób tymczasowy, jak i permanentny.
 
 Zmniejsz liczbę kluczy w łańcuchu uwierzytelniania. Możesz to zrobić, np. usuwając WSZYSTKIE klucze z pamięci (nie znikają one z dysku - są tylko usuwane z pamięci SSH).
 
-```makefile
+```bash
 ssh-add -D
 ```
 
-Po tej operacji zaloguj się do serwera hasłem lub dodaj do keychain tylko jeden, wymagany dla serwera klucz:
+Po tej operacji zaloguj się do serwera hasłem lub dodaj do keychain tylko jeden, wymagany dla serwera klucz:
 
-```makefile
+```bash
 ssh-add /sciezka/do/klucza_ssh
 ```
 
@@ -40,35 +40,32 @@ ssh-add /sciezka/do/klucza_ssh
 
 Możesz połączyć się do swojego serwera z pominięciem kluczy z keychain (bez jednoczesnego usuwania ich z tej lokalizacji):
 
-```makefile
-ssh **-o IdentitiesOnly=yes** root@serwer
+```bash
+ssh -o IdentitiesOnly=yes root@serwer
 ```
 
 Ta opcja sprawia, że do połączenia używane będą jedynie klucze zdefiniowane w linii poleceń lub w konfiguracji SSH.
 
 Aby wskazać konkretny klucz, możesz użyć polecenia:
 
-```makefile
-ssh **-o IdentitiesOnly=yes** -i /sciezka/do/klucza_ssh root@serwer
+```bash
+ssh -o IdentitiesOnly=yes -i /sciezka/do/klucza_ssh root@serwer
 ```
 
 **Metoda 3:**
 
-Zaloguj się na serwer docelowy jako root i edytuj plik **/etc/ssh/sshd_config**.
+Zaloguj się na serwer docelowy jako root i edytuj plik **/etc/ssh/sshd_config**.
 
-Znajdź w nim linię zawierającą wpis “**MaxAuthTries**” (jest szansa, że będzie zakomentowana, wtedy usuń “**#**” z początku linii) i zamień ją np. na:
+Znajdź w nim linię zawierającą wpis “**MaxAuthTries**” (jest szansa, że będzie zakomentowana, wtedy usuń “**#**” z początku linii) i zamień ją np. na:
 
-```makefile
+```bash
 MaxAuthTries 10
 ```
 
-Wartość ”10” jest przykładem. Dostosuj tę wartość do swoich potrzeb, tak aby współgrała z liczbą używanych przez Ciebie kluczy (najlepiej ustaw ją na liczbę kluczy + 1).
+Wartość ”10” jest przykładem. Dostosuj tę wartość do swoich potrzeb, tak aby współgrała z liczbą używanych przez Ciebie kluczy (najlepiej ustaw ją na liczbę kluczy + 1).
 
-Oczywiście, aby zastosować trzecią metodę, najpierw musisz jakoś dostać się na serwer, a w tym pomogą Ci dwie wcześniejsze metody 🙂
+Oczywiście, aby zastosować trzecią metodę, najpierw musisz jakoś dostać się na serwer, a w tym pomogą Ci dwie wcześniejsze metody 🙂
 
-<aside>
-💡 Pamiętaj, że jeden klucz SSH możesz wykorzystywać na wielu serwerach jednocześnie. Zazwyczaj nie potrzebujesz tworzyć jednego klucza per serwer, więc posiadanie ich załadowanych np. 15 w keychain może świadczyć o kiepskim zarządzaniu tymi kluczami.
+> 💡 Pamiętaj, że jeden klucz SSH możesz wykorzystywać na wielu serwerach jednocześnie. Zazwyczaj nie potrzebujesz tworzyć jednego klucza per serwer, więc posiadanie ich załadowanych np. 15 w keychain może świadczyć o kiepskim zarządzaniu tymi kluczami.
 
-</aside>
-
-**[Powrót do strony głównej](../MIKR%20US%20-%20Don't%20Panic!%2072ab7e2ae85342d2a0a0c9443d521166.md)**
+[Powrót do strony głównej](/)

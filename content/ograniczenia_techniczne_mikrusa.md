@@ -10,4 +10,4 @@ Poniżej lista tych ograniczeń 👇
 - Ze względu na używaną technologię, **niemożliwe jest dodanie (w sposób stabilny) pamięci SWAP w pliku**.
 - Ze względu na używany współdzielony kernel, **niemożliwe jest podmontowanie zasobów NFS w klasyczny sposób**. Możesz jednak [wykorzystać rozwiązanie bazujące na FUSE](https://github.com/sahlberg/fuse-nfs).
 
-[Powrót do strony głównej](../MIKR%20US%20-%20Don't%20Panic!%2072ab7e2ae85342d2a0a0c9443d521166.md)
+[Powrót do strony głównej](/)

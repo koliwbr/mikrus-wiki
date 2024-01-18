@@ -11,24 +11,24 @@ Jeśli masz dynamiczne IP, to wiesz, że nie możesz polegać na adresie IP. Wte
 
 Rozwiązanie jest proste: to Twój serwer czeka na nawiązanie połączenia z konkretnym portem, a Twój domowy komputer (ze zmiennym IP) łączy się do Mikrusa (który ma stałe IP).
 
-Jest wiele opcji tunelowania SSH, możesz o nich poczytać w artykule podlinkowanym w [Bibliotece wiedzy](Biblioteka%20Mikrusa%20b7da194d9bbf43fea9aacbff9b943245.md), tutaj omówię tylko jedną z nich; **Remote port forwarding.**
+Jest wiele opcji tunelowania SSH, możesz o nich poczytać w artykule podlinkowanym w [Bibliotece wiedzy](../biblioteka_mikrusa), tutaj omówię tylko jedną z nich; **Remote port forwarding.**
 
 Wyszczególnijmy trzech “aktorów”:
 
 - **mikrus** - Twój serwer VPS
-- local server - Twój lokalny serwer, **do którego** chcesz się dostać za pośrednictwem Mikrusa
+- local server - Twój lokalny serwer, **do którego** chcesz się dostać za pośrednictwem Mikrusa
 - remote machine - maszyna w sieci, **z której** chcesz się połączyć do lokalnego serwera, przez Mikrusa
 
 Wygląda to tak:
 
-remote 💻  →  mikrus →  local 🖥️
+remote 💻  →  mikrus →  local 🖥️
 
 # Klucze SSH
 
 Po pierwsze musisz posiadać dwa klucze SSH:
 
 - do połączenia się do Mikrusa
-- do połączenia się do Lokalnego serwera
+- do połączenia się do Lokalnego serwera
 
 Możesz je wygenerować poleceniem:
 
@@ -36,7 +36,7 @@ Możesz je wygenerować poleceniem:
 ssh-keygen -t rsa
 ```
 
-Dla ułatwienia połączenia możesz pominąć ustawianie hasła dla tych kluczy.
+Dla ułatwienia połączenia możesz pominąć ustawianie hasła dla tych kluczy.
 
 Zapisz je pod nazwami `mikrus` i `local_server`.
 
@@ -46,8 +46,7 @@ Przygotowane wcześniej klucze zapisz w odpowiednie miejsca:
 
 | mikrus | local server | remote machine |
 | --- | --- | --- |
-| Klucz mikrus.pub wgraj przez https://mikr.us/panel w sekcji Klucze SSH | Klucz mikrus (prywatny) zapisz w ~/.ssh 
-Klucz local_server.pub dodaj do ~/.ssh/authorized_keys | Klucz local_server (prywatny) zapisz w ~/.ssh |
+| Klucz `mikrus.pub` wgraj przez https://mikr.us/panel w sekcji Klucze SSH | Klucz mikrus (prywatny) zapisz w `~/.ssh`, a klucz `local_server.pub` dodaj do `~/.ssh/authorized_keys` | Klucz `local_server` (prywatny) zapisz w `~/.ssh` |
 
 # Zmiany na Mikrusie
 
@@ -85,7 +84,7 @@ ssh -NR 20310:localhost:22 root@srv16.mikr.us -p 10310 -i ~/.ssh/mikrus
 gdzie:
 
 - ***[jeden_z_dodatkowych_portów]*** - Mikrus daje Ci do dyspozycji dwa dodatkowe porty TCP/UDP, możesz je odnaleźć w swoim panelu w sekcji “Porty TCP”
-- ***[adres_mikrusa]*** - to nazwa serwera, na którym znajduje się VPS, czyli np. srv16.mikr.us
+- ***[adres_mikrusa]*** - to nazwa serwera, na którym znajduje się VPS, czyli np. srv16.mikr.us
 - ***[podstawowy_port_ssh]*** - podstawowy port SSH, jaki dostałeś po kupnie Mikrusa
 
 ## Utrzymywanie połączenia
@@ -124,11 +123,11 @@ sudo autossh -M 0 -o "UserKnownHostsFile /dev/null" -o "StrictHostKeyChecking no
 
 Dodatkowo, jeśli dodasz opcję `-f`, `autossh` wejdzie w “background”.
 
-Dobrą opcją jest skonfigurowanie `autossh` tak, żeby startował razem z systemem. Aby to zrobić, kieruj się [tym artykułem](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-autossh/).
+Dobrą opcją jest skonfigurowanie `autossh` tak, żeby startował razem z systemem. Aby to zrobić, kieruj się [tym artykułem](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-autossh/).
 
 # Zmiany na komputerze zdalnym
 
-Jeśli wszystko skonfigurowałeś poprawnie, powinieneś móc połączyć się do Twojego lokalnego serwera w ten sposób:
+Jeśli wszystko skonfigurowałeś poprawnie, powinieneś móc połączyć się do Twojego lokalnego serwera w ten sposób:
 
 ```bash
 ssh [nazwa_usera_na_lokalnym_serwerze]@[adres_mikrusa] -p [jeden_z_dodatkowych_portów] -i ~/.ssh/local_server
@@ -143,4 +142,4 @@ gdzie:
 - ***[adres_mikrusa]*** - jak w poprzednim paragrafie
 - ***[jeden_z_dodatkowych_portów]*** - port, który wybrałeś do tunelowania
 
-**[Powrót do strony głównej](../MIKR%20US%20-%20Don't%20Panic!%2072ab7e2ae85342d2a0a0c9443d521166.md)**
+[Powrót do strony głównej](/)

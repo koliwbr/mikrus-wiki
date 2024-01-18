@@ -9,4 +9,4 @@ Możliwe rozwiązania:
 
 Jeśli nie masz pojęcia o co chodzi w drugiej opcji, to pierwsza brzmi jakby bardziej była dla Ciebie ;)
 
-[Powrót do strony głównej](../MIKR%20US%20-%20Don't%20Panic!%2072ab7e2ae85342d2a0a0c9443d521166.md)
+[Powrót do strony głównej](/)

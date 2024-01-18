@@ -30,16 +30,14 @@ Następnie musisz wycelować swoją domenę poprzez rekord DNS o nazwie “A” 
 - Dla rekordu ‘A’ podaj adres IP jaki ma serwer (możesz go pobrać np. pingując go, czy używając narzędzi dig/host)
 - Dla rekordu CNAME wpisz po prostu ‘outsider.mikr.us’
 
-<aside>
-💡 Jeśli planujesz hostować na Outsiderze tylko pocztę (lub przekierowanie poczty), to ustawianie rekordów A/CNAME jest zbyteczne. Wystarczy jedynie MX (instrukcja poniżej).
 
-</aside>
+> 💡 Jeśli planujesz hostować na Outsiderze tylko pocztę (lub przekierowanie poczty), to ustawianie rekordów A/CNAME jest zbyteczne. Wystarczy jedynie MX (instrukcja poniżej).
 
 ## Jak hostować pocztę na Outsiderze?
 
 Musisz posiadać własną domenę (nasza darmowa nie zadziała), a następnie w ustawieniach DNS u swojego dostawcy domen dodaj do domeny serwer MX o wartości (priorytet dowolny, może być np. 5):
 
-**outsider.mikr.us**
+**`outsider.mikr.us`**
 
 Jeśli wcześniej były tam inne wpisy MX, to usuń je.
 
@@ -111,10 +109,7 @@ Nawet jeśli nie korzystasz z Outlooka, to plik, który ściągasz to zwykły pl
 
 ## Jak ustawić przekierowanie poczty na Outsiderze?
 
-<aside>
-🛑 Przed przystąpieniem do konfiguracji przekierowań, wykonaj kroki z rozdziału “***Jak hostować pocztę na Outsiderze?***” (ustawienia MX w DNS)
-
-</aside>
+> 🛑 Przed przystąpieniem do konfiguracji przekierowań, wykonaj kroki z rozdziału “***[Jak hostować pocztę na Outsiderze?](#jak-hostować-pocztę-na-outsiderze)***” (ustawienia MX w DNS)
 
 Zaloguj się do panelu Outsidera i dodaj w nim nową domenę. Musisz to zrobić, nawet jeśli nie planujesz hostować u nas strony WWW, a jedynie samą pocztę lub przekierowanie.
 

@@ -154,7 +154,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 Po tym wszystkim zapiszmy plik. (Warto jeszcze zwrócić uwagę na bezpieczeństwo aplikacji: jeśli wystawimy ją publicznie, parametr **DEBUG** w pliku powinien zostać przestawiony na False, dodatkowo, warto umieścić wrażliwe wartości, jak hasło do bazy poza plikiem, używając do tego np. modułu djangowego o nazwie environ [https://django-environ.readthedocs.io/en/latest/](https://django-environ.readthedocs.io/en/latest/) — dla początkujących proponuję na razie jednak ominąć tę akcję i wrócić po wykonaniu całości).
 
-Zobacz w sekcji **Uwagi**, ****z czym się wiąże przestawienie parametru **DEBUG**. 
+Zobacz w sekcji **[Uwagi](#uwagi)**, z czym się wiąże przestawienie parametru **DEBUG**. 
 
 Następnie migrujemy bazę danych następującymi komendami:
 
@@ -283,7 +283,7 @@ server {
 }
 ```
 
-Zastąp [twojadomena.pl](http://twojadomena.pl) adresem ip, jeśli chcesz, aby aplikacja działała lokalnie lub domeną, aby była dostępna publicznie. Jeśli chcesz, aby aplikacja działa pod twoją domeną, musisz ją przekierować na MIKRUSa (np. z użyciem CloudFlare: [https://www.notion.so/Podpi-cie-domeny-przez-CloudFlare-2a04b845203a4d9b82fa1816c6962d8e](Podpie%CC%A8cie%20domeny%20przez%20CloudFlare%2079b0c64f20044d79a33cbc59e8501a9f.md)).
+Zastąp [twojadomena.pl](http://twojadomena.pl) adresem ip, jeśli chcesz, aby aplikacja działała lokalnie lub domeną, aby była dostępna publicznie. Jeśli chcesz, aby aplikacja działa pod twoją domeną, musisz ją przekierować na MIKRUSa (np. z użyciem [CloudFlare](../podpiecie_domeny_przez_cloudflare)).
 
 Na koniec, tworzymy link do stron udostępnionych (nginx sugeruje zarządzanie serwerami w taki sposób, aby rozdzielić wszystkie możliwe konfiguracje stron od tych rzeczywiście włączonych):
 
@@ -306,6 +306,8 @@ sudo systemctl restart nginx
 Teraz, można wejść na adres podany w konfiguracji nginxa (server name) i oczom powinna pokazać się bazowa aplikacja Django.
 
 Aplikacja powinna działać nawet po restarcie MIKRUSa. Na koniec możemy wylogować się z użytkownika (komenda **exit**)
+
+[Powrót do strony głównej](/)
 
 ### Uwagi
 

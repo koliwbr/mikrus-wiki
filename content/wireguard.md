@@ -8,4 +8,4 @@ Serwer wyjściowy wspólnego Wireguarda fizycznie znajduje się w Finlandii i st
 
 Korzystanie z tej instancji do ściągania nielegalnych plików (sieci P2P) czy oglądania wideo strumieniowego (Netflix itp) jest zabronione.
 
-[Powrót do strony głównej](../MIKR%20US%20-%20Don't%20Panic!%2072ab7e2ae85342d2a0a0c9443d521166.md)
+[Powrót do strony głównej](/)
